@@ -4,9 +4,11 @@ English translation of Faute de servo
 What is this?
 -------------
 
-This is the source code to "Faute de Servo", an interactive fiction game
+This is the source code to "En Garde", an interactive fiction game
 (or more commonly known as "text adventure".)  It was originally
-written by Jack Welch in late 2017.
+written by Jack Welch in late 2017 under the title of "Faute de 
+servo" and was submitted to the French IF Competition. This is the 
+English language translation of that game.
 
 The code is released under the MIT license, which you can find in the
 LICENSE file.
@@ -32,17 +34,17 @@ To build the game:
 
 	1. Create a working Inform project from your source tree:
 
-		$ git clone URL cerveaux
+		$ git clone URL engarde
   
-		$ cd cerveaux
+		$ cd engarde
   
-		$ mv cerveaux.inform/ temp.inform/
+		$ mv engarde.inform/ temp.inform/
 
-	[...launch Inform, create new project in this dir called 'cerveux'…]
+	[...launch Inform, create new project in this dir called 'engarde'…]
 
-		$ cp temp.inform/Source/story.ni cerveaux.inform/Source/
+		$ cp temp.inform/Source/story.ni engarde.inform/Source/
   
-		$ cp temp.inform/uuid.txt cerveaux.inform/
+		$ cp temp.inform/uuid.txt engarde.inform/
   
 		$ rm -rf temp.inform/
 
@@ -53,7 +55,7 @@ To build the game:
 	come along for the ride. Be sure to install them into your local copy of inform 
 	when you compile.
 
-	3. Launch the Inform IDE and load the cerveux.inform project.  The source code 
+	3. Launch the Inform IDE and load the engarde.inform project.  The source code 
 	should be visible, and it should compile fine.  [Make	sure that Inform's 
 	settings are are set to "Glulx" as the target VM.]
 
