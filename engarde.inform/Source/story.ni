@@ -533,12 +533,12 @@ Instead of simpleEating when the player is in Les Toilettes:
 				
 After going south from Couloir 1 when the consciousness of the player is 3 for the first time:
 		now the BlockChatterFlag is true;
-		say "Quand vous entrez dans les toilettes, un mouvement attire votre attention.[paragraph break][italic type]Y a-t-il quelqu'un d'autre ici ?[roman type][paragraph break]Un costaud vêtu d'un uniforme en lambeaux vous dévisage sans sourciller. Son teint blafard, ses yeux cernés et ses joues creuses rappellent un cadavre.[paragraph break]Cette rencontre maladroite continue pendant plusieurs minutes, jusqu'au moment où vous vous rendez compte que vous regardez votre propre reflet dans un miroir.";
+		say "As you enter the bathroom, you catch some movement out of the corner of your eye.[paragraph break][italic type]Is somebody else here?[roman type][paragraph break]A burly man dressed in a tattered uniform stares at you with unblinking eyes. His pale skin, rheumy eyes and sunken cheeks call to mind a cadaver.[paragraph break]This awkward encounter goes on for several minutes before you realize that you are staring at your own reflection in a mirror.";
 		try looking.
 	
 After going south from Couloir 1 when the consciousness of the player is 4 for the first time:
 	now the BlockChatterFlag is true;
-	say "Vous voyez votre reflet dans le miroir et vous le regardez un long moment. Vous reconnaissez immédiatement Julien, vêtu de son uniforme bleu de garde et contre toute attente portant toujours son chapeau officiel.";
+	say "You see your reflection in a mirror and give yourself a long, hard look. You immediately recognize Julien, dressed in his blue guard uniform and despite all odds, still wearing his official hat.";
 	try looking.
 
 Section Salle de Décontamination
@@ -550,35 +550,35 @@ The deconDoor is a  locked door. It is west of Couloir 1 and east of Salle de D�
 To say descDecon:
 	if the consciousness of the player is:
 		-- 3:
-			say "Des pommeaux de douche visent le centre de la pièce qui baigne continuellement dans une lumière violette";
+			say "The showerheads are aimed at the center of a room bathed continously in a deep, purple light";
 		-- 4: 
-			say "Des jets à haute pression entourent la pièce afin d'arroser le personnel d'une solution antiseptique lorsqu'ils entrent et sortent des zones potentiellement contaminées. La pièce est continuellement éclairée par des lumières germicides";
-	say ". La porte à l'est mène au couloir et celle au nord à l'escalier"
+			say "The high pressure nozzles that ring the room are designed to hose down personnel with an antiseptic solution as they come and go from potentially contaminated zones within the complex. The room is continuously illuminated by germicidal lights";
+	say ". The door to the east leads to the hallway and to the north to the stairs"
 
 To say pnDecon:
 	if the consciousness of the player is:
 		-- 3:
-			say "Les Douches";
+			say "The showers";
 		-- 4:
-			say "Salle de Décontamination".
+			say "Decontamination room".
 			
 To say pnDeconDoor:
 	if the consciousness of the player is:
 		-- 3:
-			say "porte de la salle de bain";
+			say "bathroom door";
 		-- 4:
-			say "porte de la salle de décontamination".
+			say "decontamination suite door".
 
 Section Escalier 1
 
-Escalier 1 is a room. The description of Escalier 1  is "[descEscalier1]." The printed name of Escalier 1 is "Escalier (premier niveau)".
+Escalier 1 is a room. The description of Escalier 1  is "[descEscalier1]." The printed name of Escalier 1 is "Stairway (first level)".
 
 The esc1door is a  locked door. It is north of Salle de Décontamination and south of Escalier 1.
 
-The printed name of esc1door is "porte entre la salle de [if the consciousness of the player is 3]bain[otherwise]décontamination[end if] et l'escalier".
+The printed name of esc1door is "door between the [if the consciousness of the player is 3]shower[otherwise]decontamination[end if] room et the stairs".
 
 To say descEscalier1:
-	say "L'escalier remonte vers le nord et relie [if the consciousness of the player is 3]la salle de bain[otherwise]la salle de décontamination[end if] au sud avec les niveaux plus hauts de l'installation".
+	say "The stairway climbs to the north and connects the [if the consciousness of the player is 3]shower[otherwise]decontamination[end if] room to the south with the rest of the installation above".
 	
 After going north from Salle de Décontamination:
 	say "[upNorth].";
@@ -589,17 +589,17 @@ After going south from Escalier 2:
 	try looking.
 	
 To say upNorth:
-	say "Vous montez l'escalier au nord".
+	say "You climb the stairs towards the north".
 	
 To say downSouth:
-	say "Vous descendez l'escalier au sud".
+	say "You go down the stairs southwards".
 
 Section Escalier 2
 
-Escalier 2 is a room. The description of Escalier 2  is "[descEscalier2]." Escalier 2 is north from Escalier 1. The printed name of Escalier 2 is "Escalier (deuxième niveau)".
+Escalier 2 is a room. The description of Escalier 2  is "[descEscalier2]." Escalier 2 is north from Escalier 1. The printed name of Escalier 2 is "Stairway (second level)".
 
 To say descEscalier2:
-	say "L'escalier remonte vers le nord et relie l[apostrophe]escalier au sud avec le sas au nord".
+	say "The stairs go up towards the north and connect the lower set of stairs to the south with the airlock to the north".
 	
 After going north from Escalier 1:
 	say "[upNorth].";
@@ -611,30 +611,28 @@ After going south from Sas:
 
 Section Sas
 
-Sas is a room. The description of Sas is "[descSas]." The printed name of the sas is "Sas".
+Sas is a room. The description of Sas is "[descSas]." The printed name of the sas is "Airlock".
 
-The sasDoor is a  locked door. It is north of Escalier 2 and south of Sas. The printed name of the sasDoor is "porte blindée du sas".
+The sasDoor is a  locked door. It is north of Escalier 2 and south of Sas. The printed name of the sasDoor is "armored airlock door".
 
-The scientifique is an edible  thing in the sas. The scientifique has a truth state called introducedFlag. The introducedFlag of scientifique is false. The scientifique has a number called conversations. The conversations of the scientifique is 0.
-
-The indefinite article of the scientifique is "[if the introducedFlag of scientifique is true]le[otherwise]une[end if]". 
+The scientist is an edible  thing in the sas. The scientist has a number called conversations. The conversations of the scientist is 0.
 
 To say descSas:
 	if the consciousness of the player is:
 		-- 3:
-			say "Une longue pièce tubulaire baignée de lumière rouge";
+			say "A long, tubular room bathed in red light";
 		-- 4:
-			say "Les lourdes portes blindées, le manque de fenêtres et la forme tubulaire de la pièce vous rappellent un sous marin. La lumière au-dessus de la porte à l'autre extrémité de la pièce signifie qu'elle est verrouillée".
+			say "The heavy armored doors, lack of windows, and tubular shape of the room remind you of a submarine. The light above the door at the other end of the room is red, signaling that the exterior door is locked".
 			
 Instead of going north when the player is in the sas:
-	if scientifique is in the sas:
-		say "Vous auriez besoin de dépasser la scientifique, et elle n'a pas l'air coopérative. De plus, vous ne connaissez pas le code pour ouvrir la porte extérieure, il serait donc inutile d'essayer.";
+	if scientist is in the sas:
+		say "You would need to get past the scientist and she doesn't appear to be all that cooperative. More over, since you don't know the code to open the outer door, it wouldn't make much sense to try.";
 	otherwise:
-		say "Futile. La porte est hermétiquement fermée et ne peut être ouverte que par ceux qui se trouvent dans la salle de contrôle."
+		say "Useless. The door is hermitically sealed and can only be opened by someone in the control room."
 			
-Before eating scientifique when the conversations of scientifique are less than 5:
+Before eating scientist when the conversations of scientist are less than 5:
 	now the BlockChatterFlag is true;
-	say "[one of]La scientifique vous repousse avec son pied-de-biche. Une fois hors de portée de votre bouche menaçante, elle appuie sur un bouton de l[apostrophe]interphone et dit : « Attention : salle de contrôle. Ici docteur Rambaud, dans le sas. Julien est ici avec moi. Malheureusement, je dois vous signaler que l'expérience a raté.  Ne déverrouillez en aucun cas la porte extérieure. »[paragraph break][or]Le docteur Rambaud ne bouge pas de sa position derrière le bureau, mais lorsque vous l'approchez, elle lance une série de coups avec son pied-de-biche qui vous fait reconsidérer votre action.[or]La scientifique vous confie : « Je vous fais crédit de votre persévérance, néanmoins… » et elle vous frappe carrément au nez. Ébranlé, vous trébuchez un peu et vous hâtez de reculer.[or]Le docteur Rambaud vous bat avec le pied-de-biche à plusieurs reprises.[stopping]";
+	say "[one of]The scientist beats you back with her crowbar. Once out of reach of your slavering maw, she presses a button on the intercom and says, [quotation mark]Attention, control room, this is Doctor Rambaud in the airlock. Julien is here with me. Unfortunately, I have to report that the experiment has failed. Don't unlock the outer door no matter what.[quotation mark][paragraph break][or]Doctor Rambaud does not budge from behind the desk, but as you approach she lands a series of blows with her crowbar that makes you reconsider your actions.[or]The scientist confides, [quotation mark]I have to give you credit for your perseverance, but… [quotation mark] and she whacks you solidly on the nose. Stunned, you stagger back out of reach of her crowbar.[or]Doctor Rambaud beats you repeatedly with the crowbar.[stopping]";
 	stop the action.
 	
 
@@ -725,20 +723,20 @@ Carry out simpleTalking:
 			increase the conversations of the player by 1;
 			if the conversations of the player is:
 				-- 1:
-					say "« Salle de contrôle, Professeur Drummond à l'appareil.[line break]-- C'est ton chien, Lucky ! Je suis ici dans le sas ! Je suis tellement heureux de t'entendre ![line break]-- Euh… est-ce que vous vous moquez de moi ? L'interphone n'est que pour les communications officielles. Qui est-ce ?[paragraph break][italic type]-- C'est lui ! C'est le père de ma famille, dit Lucky.[line break]-- Calme toi, Lucky, insiste la scientifique. Laisse Julien prendre le micro.[roman type][paragraph break]-- Excusez-moi, dit Julien. Je peux tout expliquer. Je suis Julien Truffaut.[line break]-- Le garde ?[line break]-- Oui.[line break]-- Impossible. Le docteur Rambaud a dit qu'il était devenu un zombie. Les zombies ne peuvent pas parler. Je n'ai pas de temps pour ces conneries. »[paragraph break]";
+					say "« Salle de contrôle, Professeur Drummond à l'appareil.[line break]-- C'est ton chien, Lucky ! Je suis ici dans le sas ! Je suis tellement heureux de t'entendre ![line break]-- Euh… est-ce que vous vous moquez de moi ? L'interphone n'est que pour les communications officielles. Qui est-ce ?[paragraph break][italic type]-- C'est lui ! C'est le père de ma famille, dit Lucky.[line break]-- Calme toi, Lucky, insiste la scientist. Laisse Julien prendre le micro.[roman type][paragraph break]-- Excusez-moi, dit Julien. Je peux tout expliquer. Je suis Julien Truffaut.[line break]-- Le garde ?[line break]-- Oui.[line break]-- Impossible. Le docteur Rambaud a dit qu'il était devenu un zombie. Les zombies ne peuvent pas parler. Je n'ai pas de temps pour ces conneries. »[paragraph break]";
 				-- 2:
-					say "« Je ne plaisante pas, dit Julien. Le docteur Rambaud m'a guéri.[line break]-- Assez, répond le professeur. Si elle est là, donnez-lui la parole.[line break]-- Elle est… occupée… en ce moment ». Pendant que vous parlez, vous traînez le corps inerte de la scientifique vers l'escalier.[paragraph break]« Dites donc, continuez-vous, si vous méfiez de moi, activez la caméra de surveillance dans le sas. Vous me verrez.[line break]-- Attendez. »[paragraph break]";
+					say "« Je ne plaisante pas, dit Julien. Le docteur Rambaud m'a guéri.[line break]-- Assez, répond le professeur. Si elle est là, donnez-lui la parole.[line break]-- Elle est… occupée… en ce moment ». Pendant que vous parlez, vous traînez le corps inerte de la scientist vers l'escalier.[paragraph break]« Dites donc, continuez-vous, si vous méfiez de moi, activez la caméra de surveillance dans le sas. Vous me verrez.[line break]-- Attendez. »[paragraph break]";
 				-- 3:
-					say "« Me voyez-vous ? vous demandez.[line break]-- Oui. Mais comment se fait-il que vous êtes toujours en vie ? J'ai pensé que vous étiez infecté par le virus.[line break]-- Oui, vous avez raison, comme je vous l[apostrophe]ai dit…[paragraph break][italic type]-- Laisse-moi expliquer, dit le scientifique.[roman type][paragraph break]-- Le docteur Rambaud a préparé un remède efficace utilisant le système microfluidique de biosynthèse suivant le protocol [quotation mark]M13[quotation mark] dont elle a discuté avec vous auparavant. Mes voies neuronales étaient restaurées et je suis guéri de l'infection.[line break]-- Ouah. C[apostrophe]est peut-être la fin de la pandémie.[line break]-- Oui. Certainement ! »[paragraph break]";
+					say "« Me voyez-vous ? vous demandez.[line break]-- Oui. Mais comment se fait-il que vous êtes toujours en vie ? J'ai pensé que vous étiez infecté par le virus.[line break]-- Oui, vous avez raison, comme je vous l[apostrophe]ai dit…[paragraph break][italic type]-- Laisse-moi expliquer, dit le scientist.[roman type][paragraph break]-- Le docteur Rambaud a préparé un remède efficace utilisant le système microfluidique de biosynthèse suivant le protocol [quotation mark]M13[quotation mark] dont elle a discuté avec vous auparavant. Mes voies neuronales étaient restaurées et je suis guéri de l'infection.[line break]-- Ouah. C[apostrophe]est peut-être la fin de la pandémie.[line break]-- Oui. Certainement ! »[paragraph break]";
 				-- 4: 
 					say "Vous demandez à parler avec le responsable de l'installation, le colonel Greillier et vous expliquez en détail votre histoire.[paragraph break]Après quelques heures de discussion, il est convaincu et la porte extérieure du sas est déverrouillée vous permettant de sortir.";
 					terminate the game;
 	otherwise:
 		now the BlockChatterFlag is true;
-		increase the conversations of scientifique by 1;
-		if the conversations of scientifique is:
+		increase the conversations of scientist by 1;
+		if the conversations of scientist is:
 			-- 1:
-				say "Vous commencez à balbutier et la scientifique vous dévisage d'un regard inquisiteur.[paragraph break]« C'est possible ? demande-t-elle. Es-tu toujours capable de parler ?[line break]-- Oui, vous grognez au prix d'un grand effort. Moi... parle.[line break]-- Incroyable ! C'est un miracle, Julien. De quoi tu te souviens ?[paragraph break][italic type]-- Julien ? Qui est-ce ? demande Lucky.[line break]-- C'est pas moi, répond la voix minuscule de la souris. Peut-être que le nom appartient à notre ami, la tranche de cerveau ?[line break]-- Je ne m'en souviens pas, mais bon, je pourrais aussi bien être ce Julien.[roman type][paragraph break]-- Rien. Rien de tout. Julien… C'est moi ?[line break]-- Oui, Julien, c'est toi. Et moi, je suis ton Isabelle. Isabelle Rambaud, répond-elle d'un ton déçu. »[paragraph break]";
+				say "Vous commencez à balbutier et la scientist vous dévisage d'un regard inquisiteur.[paragraph break]« C'est possible ? demande-t-elle. Es-tu toujours capable de parler ?[line break]-- Oui, vous grognez au prix d'un grand effort. Moi... parle.[line break]-- Incroyable ! C'est un miracle, Julien. De quoi tu te souviens ?[paragraph break][italic type]-- Julien ? Qui est-ce ? demande Lucky.[line break]-- C'est pas moi, répond la voix minuscule de la souris. Peut-être que le nom appartient à notre ami, la tranche de cerveau ?[line break]-- Je ne m'en souviens pas, mais bon, je pourrais aussi bien être ce Julien.[roman type][paragraph break]-- Rien. Rien de tout. Julien… C'est moi ?[line break]-- Oui, Julien, c'est toi. Et moi, je suis ton Isabelle. Isabelle Rambaud, répond-elle d'un ton déçu. »[paragraph break]";
 			-- 2:
 				say "« [italic type]Elle a de jolies yeux (pour un géant), remarque la souris.[line break]-- Tais-toi, disent Lucky et la tranche de cerveau à l'unisson. »[roman type][paragraph break]Vous vous efforcez de former les mots les uns après les autres.[paragraph break]« Que faisons-nous ici ?[line break]-- Écoute, Julien. Je n'ai pas beaucoup de temps. Je suis chercheur médical et tu es garde. Nous travaillions dans une installation consacrée à trouver un remède contre le virus Zombie777 qui a désolé le monde entier.[line break]-- Un garde ?[line break]-- Oui. Fais attention, Julien, c'est important. Un foule d'individus infectés ont encerclé le laboratoire et tu me protégeais quand tu as été griffé. Pour éviter que tu ne deviennes un zombie, je t'ai administré le traitement expérimental.[line break]-- Alors, je suis guéri ?[line break]-- Loin de là, je dirais. »[paragraph break]";
 			-- 3:
@@ -843,9 +841,9 @@ After going north from Escalier 2 when the sasDoor is not locked for the first t
 	try looking;
 	increment the knownCommands of the player.
 	
-After eating scientifique:
+After eating scientist:
 	now the BlockChatterFlag is true;
-	say "Vous dévorez le cerveau de la scientifique. Immédiatement vous voyez le monde d'un point de vue plus raffiné et érudit.[paragraph break]« [italic type]C'est fait ? demande la voix d'Isabelle avec hésitation.[line break]-- Oui, tu étais délicieuse, enthousiasme le souris.[line break]-- Le meilleur jusqu'ici, ajoute Lucky.[line break]-- Excuse mes co-esprits, ils manquent cruellement de tact, intervient la tranche de cerveau.[line break]-- Hé ! gémissent la souris et le chien.[line break]-- Sois la bienvenue, Isabelle, continue la tranche de cerveau. Laisse-moi te présenter notre petite troupe : voilà Lucky, le chien, et ici figure Le Marquis Des Souris (ou juste simplement [quotation mark]Souris[quotation mark] parce qu'il est plutôt modeste), et moi, je suis le nommé [quotation mark]tranche de cerveau[quotation mark]. On est à ta disposition.[line break]-- Bonjour, les gars, dit Isabelle avec chaleur.  »[paragraph break]";
+	say "Vous dévorez le cerveau de la scientist. Immédiatement vous voyez le monde d'un point de vue plus raffiné et érudit.[paragraph break]« [italic type]C'est fait ? demande la voix d'Isabelle avec hésitation.[line break]-- Oui, tu étais délicieuse, enthousiasme le souris.[line break]-- Le meilleur jusqu'ici, ajoute Lucky.[line break]-- Excuse mes co-esprits, ils manquent cruellement de tact, intervient la tranche de cerveau.[line break]-- Hé ! gémissent la souris et le chien.[line break]-- Sois la bienvenue, Isabelle, continue la tranche de cerveau. Laisse-moi te présenter notre petite troupe : voilà Lucky, le chien, et ici figure Le Marquis Des Souris (ou juste simplement [quotation mark]Souris[quotation mark] parce qu'il est plutôt modeste), et moi, je suis le nommé [quotation mark]tranche de cerveau[quotation mark]. On est à ta disposition.[line break]-- Bonjour, les gars, dit Isabelle avec chaleur.  »[paragraph break]";
 	move the dépouille saignante du Docteur Rambaud to the sas;
 	move the interphone to the sas;
 	move the panneau électrique to escalier 1;
@@ -861,7 +859,7 @@ Every turn:
 	if the curedFlag of the player is not true:
 		if the disjoncteurs are not broken and the servomoteur is not broken and the player is in the Laboratoire Biochimique:
 			now the BlockChatterFlag is true;
-			say "L'appareil robotique émit un bip et remplit un flacon du fluide fluo vert. Vous le prenez anxieusement, portez un toast à votre propre santé, et buvez le remède à grandes gorgées.[paragraph break]« Je ne ressens rien, s'inquiète la tranche de cerveau.[line break]-- Attendez, rassure Isabelle.[line break]-- Moi non plus, opine la souris.[line break]-- Attendez, insiste la scientifique.[line break]-- Houlà ! s'exclame Lucky. Quelque chose commence à…[line break]-- C'est parti ! hurle le docteur.  »[paragraph break]Vous tremblez violentement et vous vous évanouissez. Lorsque vous vous levez, vous observez que votre peau a repris son teint naturel et que vous pouvez vous déplacer sans trébucher. Bref, vous êtes guéri.[paragraph break]";
+			say "L'appareil robotique émit un bip et remplit un flacon du fluide fluo vert. Vous le prenez anxieusement, portez un toast à votre propre santé, et buvez le remède à grandes gorgées.[paragraph break]« Je ne ressens rien, s'inquiète la tranche de cerveau.[line break]-- Attendez, rassure Isabelle.[line break]-- Moi non plus, opine la souris.[line break]-- Attendez, insiste la scientist.[line break]-- Houlà ! s'exclame Lucky. Quelque chose commence à…[line break]-- C'est parti ! hurle le docteur.  »[paragraph break]Vous tremblez violentement et vous vous évanouissez. Lorsque vous vous levez, vous observez que votre peau a repris son teint naturel et que vous pouvez vous déplacer sans trébucher. Bref, vous êtes guéri.[paragraph break]";
 			now the curedFlag of the player is true;
 	if the BlockChatterFlag is false:
 		if the consciousness of the player is:
@@ -949,22 +947,22 @@ Section Everybody Dialogue
 
 EverybodyDialogue is a list of text that varies. 
 
-EverybodyDialogue is { "Quelle sensation incroyable ! délire la scientifique.[line break]-- On s'y habitue après un temps, dit la souris laconiquement.[line break]-- Dis-lui le plan, Lucky, demande la tranche de cerveau. Je ne me rappelle pas de toutes les étapes.[line break]-- D'accord, dit le chien, numéro un : pour commencer nous avons besoin de trouver le reste du cerveau de Julien, numéro deux : quitterons l'installation, enfin, numéro plus que deux : nous chercherons ma famille.",
-"Euh.  D'accord, dit Isabelle. Mais en premier lieu il faut sortir de la pièce où vous m'avez trouvé, et pour ce faire, il faut synthétiser le remède, propose la scientifique.[line break]-- Impossible, dit la souris d'un ton définitif.[line break]-- Pourquoi ? demande Isabelle bouleversée.[line break]-- C'est une question de mathématiques, répond la souris d'un air pointilleux. Le plan de Lucky commence déjà avec numéro un. Il n'y a rien avant le numéro un.[line break]-- Numéro zéro ? suggère Isabelle.[paragraph break][roman type]Silence radio.[paragraph break][italic type]-- OK, dit Isabelle, renumérotons… un : faire le remède, deux : sortir de l'installation, trois : chercher la famille de Lucky. Ça vous convient ?[line break]-- Oui, accorde Lucky, ça l'air raisonnable.[line break]-- Et mathématiquement correct, ajoute la souris.",
+EverybodyDialogue is { "Quelle sensation incroyable ! délire la scientist.[line break]-- On s'y habitue après un temps, dit la souris laconiquement.[line break]-- Dis-lui le plan, Lucky, demande la tranche de cerveau. Je ne me rappelle pas de toutes les étapes.[line break]-- D'accord, dit le chien, numéro un : pour commencer nous avons besoin de trouver le reste du cerveau de Julien, numéro deux : quitterons l'installation, enfin, numéro plus que deux : nous chercherons ma famille.",
+"Euh.  D'accord, dit Isabelle. Mais en premier lieu il faut sortir de la pièce où vous m'avez trouvé, et pour ce faire, il faut synthétiser le remède, propose la scientist.[line break]-- Impossible, dit la souris d'un ton définitif.[line break]-- Pourquoi ? demande Isabelle bouleversée.[line break]-- C'est une question de mathématiques, répond la souris d'un air pointilleux. Le plan de Lucky commence déjà avec numéro un. Il n'y a rien avant le numéro un.[line break]-- Numéro zéro ? suggère Isabelle.[paragraph break][roman type]Silence radio.[paragraph break][italic type]-- OK, dit Isabelle, renumérotons… un : faire le remède, deux : sortir de l'installation, trois : chercher la famille de Lucky. Ça vous convient ?[line break]-- Oui, accorde Lucky, ça l'air raisonnable.[line break]-- Et mathématiquement correct, ajoute la souris.",
 "Attends, dit Lucky, toujours comptant les étapes du plan proposé par Isabelle. Que ferons-nous en ce qui concerne le cerveau manquant ? Si j'ai bien compris, nous en aurons besoin pour reconstituer Julien.[line break]-- Malheureusement, répond Isabelle, la tranche de cerveau est maintenant tout qui reste de Julien. Nous utilisons en ce moment les voies neurales du reste de son cerveau, mais à l'exception de la tranche récupérée rien ne reste de sa personnalité. C'est une perte grave, particulièrement pour moi.[line break]-- Pourquoi pour toi ? demande la souris.[line break]-- Parce que nous étions fiancés, Julien et moi.[line break]-- Désolé, dit la tranche de cerveau. Si je pouvais me souvenir de toi, je suis sûr que je t'aurais aimé.",
-"Isabelle, penses-tu que nous allons un jour trouver ma famille ? demande Lucky.[line break]-- Oui, j'en suis certain.[line break]-- Comment peux-tu être si sûr ? demande la tranche de cerveau.[line break]-- Parce que je connais la famille : Jean-Paul et Alexandra Drummond et leurs filles, Léa et Camille. Ils ne vivent qu[apostrophe]à une centaine de mètres de moi et Julien.[line break]-- Oui, j'ai entendu ces noms souvent à la maison. Tu as assurément raison, mais comment peux-tu connaître de qui je parlais ? demande Lucky.[line break]-- Je les ai vus dans vos pensées, dit la scientifique.",
+"Isabelle, penses-tu que nous allons un jour trouver ma famille ? demande Lucky.[line break]-- Oui, j'en suis certain.[line break]-- Comment peux-tu être si sûr ? demande la tranche de cerveau.[line break]-- Parce que je connais la famille : Jean-Paul et Alexandra Drummond et leurs filles, Léa et Camille. Ils ne vivent qu[apostrophe]à une centaine de mètres de moi et Julien.[line break]-- Oui, j'ai entendu ces noms souvent à la maison. Tu as assurément raison, mais comment peux-tu connaître de qui je parlais ? demande Lucky.[line break]-- Je les ai vus dans vos pensées, dit la scientist.",
 "Tu dis que tu as vu dans les pensées de Lucky ? demande la souris. Comment est-ce possible ?[line break]-- Nous faisons tous partie d'un seul cerveau maintenant. Nos esprits sont d'une manière ou d'une autre mélangés. Je peux accéder à ses pensées et il peut également accéder aux miennes.[line break]-- Cool ! dit le souris. Nous avons des superpouvoirs !",
-"Je trouve cela un peu improbable, dit le chien. Si tu peux voir dans mes pensées, à quel numéro est-ce que je pense en ce moment ?[line break]-- La scientifique réfléchit un moment et elle dit, au numéro un.[line break]-- Oui, c'est exact, admet le chien, mais peut-être que tu y es arrivé par hasard. Essaie encore une fois…[line break]-- Tu penses au numéro deux, dit la scientifique avec conviction.[line break]-- Oui encore, dit le chien satisfait.[line break]-- Mais, objecte le souris, Lucky ne connait que deux numéros… qu'est-ce que ça prouve ?",
-"D'accord, dit la scientifique patiemment, prenons un autre exemple. Souris, je pense en ce moment à mon petit déjeuner. Je m'efforce de le visualiser avec le plus de détails possibles… tente de le voir.[line break]-- Ou ? demande la souris. Je ne sens rien.[line break]-- Ah, dit Isabelle. Voilà le problème. Je pensais en termes visuels. Laisse-moi imaginer son odeur, sa saveur… [line break]-- Oh ! Oui, oui. Je commence à l'apercevoir, dit la souris. Mon dieu, c[apostrophe]était un énorme repas ! C'est merveilleux ! Puis-je vivre de nouveau chaque repas de votre vie ? Pince-moi, je rêve.",
-"Même si je trouve le souvenir de votre repas délicieux, en ce moment je ne veux rien d'autre que des cerveaux. C'est drôle, non ? remarque la souris.[line break]-- Moi aussi, dit la tranche de cerveau.[line break]-- En fait, c'est tout à fait normal pour ceux comme nous qui fonctionnent en mode zombie, répond la scientifique.[line break]-- Nous sommes des zombies ? interroge Lucky.[line break]-- Non, précise la scientifique, ensemble nous constituons un seul zombie, partageant le corps de Julien.[line break]-- Au moins je suis dans mon propre corps, dit la tranche de cerveau.", 
-"D'autres zombies sont-ils aussi agréable que nous ? demande Lucky.[line break]-- Non, répond Isabelle, ce sont des monstres. Nous sommes quelque chose à part.  Je dirais que nous sommes un demi-zombie, ayant reçu une dose d'un remède partiellement efficace. Quant aux autres zombies, ils ne sont pas capable de parler, de penser, en somme, de faire autrement que manger des cerveaux.[line break]-- Et ça pose un problème ? demande la souris.[line break]-- C'est rien de le dire, répond la scientifique. Les zombies ont presque détruit la civilisation !", 
-"Comment est-ce possible ? dit la tranche de cerveau.[line break]-- Le virus a une virulence sans précédent, répond la scientifique. Le moindre griffure et c'est la contamination assurée. Les premiers cas ont été rapportés au Cambodge et vingt-quatre heures après des milliers des cas sont apparus tout autour du monde grâce aux transports aériens. La semaine suivante, c[apostrophe]était un capharnaüm à l[apostrophe]échelle mondiale. Sans électricité, eau et nourriture les grandes cités se sont effondrées presque immédiatement. Des feux ont balayé la campagnes. Il ne reste que quelques poches d'humanité.",
+"Je trouve cela un peu improbable, dit le chien. Si tu peux voir dans mes pensées, à quel numéro est-ce que je pense en ce moment ?[line break]-- La scientist réfléchit un moment et elle dit, au numéro un.[line break]-- Oui, c'est exact, admet le chien, mais peut-être que tu y es arrivé par hasard. Essaie encore une fois…[line break]-- Tu penses au numéro deux, dit la scientist avec conviction.[line break]-- Oui encore, dit le chien satisfait.[line break]-- Mais, objecte le souris, Lucky ne connait que deux numéros… qu'est-ce que ça prouve ?",
+"D'accord, dit la scientist patiemment, prenons un autre exemple. Souris, je pense en ce moment à mon petit déjeuner. Je m'efforce de le visualiser avec le plus de détails possibles… tente de le voir.[line break]-- Ou ? demande la souris. Je ne sens rien.[line break]-- Ah, dit Isabelle. Voilà le problème. Je pensais en termes visuels. Laisse-moi imaginer son odeur, sa saveur… [line break]-- Oh ! Oui, oui. Je commence à l'apercevoir, dit la souris. Mon dieu, c[apostrophe]était un énorme repas ! C'est merveilleux ! Puis-je vivre de nouveau chaque repas de votre vie ? Pince-moi, je rêve.",
+"Même si je trouve le souvenir de votre repas délicieux, en ce moment je ne veux rien d'autre que des cerveaux. C'est drôle, non ? remarque la souris.[line break]-- Moi aussi, dit la tranche de cerveau.[line break]-- En fait, c'est tout à fait normal pour ceux comme nous qui fonctionnent en mode zombie, répond la scientist.[line break]-- Nous sommes des zombies ? interroge Lucky.[line break]-- Non, précise la scientist, ensemble nous constituons un seul zombie, partageant le corps de Julien.[line break]-- Au moins je suis dans mon propre corps, dit la tranche de cerveau.", 
+"D'autres zombies sont-ils aussi agréable que nous ? demande Lucky.[line break]-- Non, répond Isabelle, ce sont des monstres. Nous sommes quelque chose à part.  Je dirais que nous sommes un demi-zombie, ayant reçu une dose d'un remède partiellement efficace. Quant aux autres zombies, ils ne sont pas capable de parler, de penser, en somme, de faire autrement que manger des cerveaux.[line break]-- Et ça pose un problème ? demande la souris.[line break]-- C'est rien de le dire, répond la scientist. Les zombies ont presque détruit la civilisation !", 
+"Comment est-ce possible ? dit la tranche de cerveau.[line break]-- Le virus a une virulence sans précédent, répond la scientist. Le moindre griffure et c'est la contamination assurée. Les premiers cas ont été rapportés au Cambodge et vingt-quatre heures après des milliers des cas sont apparus tout autour du monde grâce aux transports aériens. La semaine suivante, c[apostrophe]était un capharnaüm à l[apostrophe]échelle mondiale. Sans électricité, eau et nourriture les grandes cités se sont effondrées presque immédiatement. Des feux ont balayé la campagnes. Il ne reste que quelques poches d'humanité.",
 "Et quant aux animaux ? demande la souris. Étaient-ils touchés ?[line break]-- En fait, répond Isabelle, nous pensons que la maladie est d'origin canine. Avant la perte de communications avec l'Institut Pasteur à Hô-Chi-Minh-Ville, ils ont isolé une souche mutante de la rage qui a déclenché la pandémie.[line break]-- La rage ! dit Lucky, frappé de terreur. Il n'y a rien de plus terrifiant ![line break]-- Jusqu[apostrophe]à présent, précise la tranche de cerveau.",
-"Si le zombisme s'est propagé si vite, s'inquiète Lucky, penses-tu que ma famille est survécu ?[line break]-- Oui, je le sais, rassure la scientifique. Les Drummonds travaillent ici, dans l'installation et tous les travailleurs sont hébergés dans l'enceinte. Tu n'es pas loin d'eux. [line break]-- Génial ! dit le chien.", 
+"Si le zombisme s'est propagé si vite, s'inquiète Lucky, penses-tu que ma famille est survécu ?[line break]-- Oui, je le sais, rassure la scientist. Les Drummonds travaillent ici, dans l'installation et tous les travailleurs sont hébergés dans l'enceinte. Tu n'es pas loin d'eux. [line break]-- Génial ! dit le chien.", 
 "Isabelle, dit la souris, si le remède fonctionne comme prévu, que deviendrons-nous ?[line break]-- Dans quel sens ?[line break]-- Est-ce que nous restons les individus avec nos propres pensées, ou crois-tu que nous allons fusionner dans une seul esprit ?[line break]-- Impossible à prédire. Jusqu[apostrophe]à maintenant, nous avons mené des vies individuelles. Tu as tes souvenirs et j'ai les miens, mais à l'avenir nous allons vivre les mêmes événements du même point de vue. Nous partagerons un seul corps et c'est possible que nous devenions un seul esprit après un certain temps.", 
-"Je n'ai jamais souhaité être autre chose qu'une souris. Je trouve cela terrifiant, que mon esprit puisse être dilué.[line break]-- Mais vois les avantages, dit Lucky. Regarde dans mes pensés -- voici comment je me sens en chassant un écureuil. Et voici la sensation d[apostrophe]être gratté entre les oreilles.[line break]-- Oui, je suppose.[line break]-- Et ici, dit la scientifique, je te montre la Terre vue depuis l'espace -- quelque chose qu'aucune souris n'a jamais vu.[line break]-- Heu. C'est impressionnant. Et je suppose que de mon coté j'ai quelque souvenirs à partager aussi : le chaleur de dormir avec les autres souris, la joie de voler les bribes du distributeur de Lucky…[line break]-- Hé ! hurle le chien.", 
-"Quand j'ai vu le corps de Julien entrer dans le sas, j'ai remarqué qu'il se déplaçait avec difficulté, marchant lentement et trébuchant, dit la scientifique.[line break]-- Oui, je sais comment marcher, dit la tranche de cerveau, mais je le trouve désespérément difficile de le mettre en pratique.[line break]-- La souris n'aide pas, commente Lucky. Il bouge toujours les jambes.[line break]-- Moi ? dit le souris avec indignation. C'est toi qui veut toujours aller à quatre pattes.[line break]-- OK, dit la scientifique, puis-je vous convaincre qu'une seule personne doit pilote le corps à la fois ?[line break]-- Oui, certainement, acquiesce la tranche de cerveau. Le volant est à toi.", 
-"D'accord, dit la scientifique. Je m'empresse de faire ce qu'il faut pour obtenir le remède.[line break]-- Bon. Assez de papotage mes amis, laissez-la se concentrer, conseille la tranche de cerveau.[line break]-- Oui, d'accord, disent le chien et la souris."
+"Je n'ai jamais souhaité être autre chose qu'une souris. Je trouve cela terrifiant, que mon esprit puisse être dilué.[line break]-- Mais vois les avantages, dit Lucky. Regarde dans mes pensés -- voici comment je me sens en chassant un écureuil. Et voici la sensation d[apostrophe]être gratté entre les oreilles.[line break]-- Oui, je suppose.[line break]-- Et ici, dit la scientist, je te montre la Terre vue depuis l'espace -- quelque chose qu'aucune souris n'a jamais vu.[line break]-- Heu. C'est impressionnant. Et je suppose que de mon coté j'ai quelque souvenirs à partager aussi : le chaleur de dormir avec les autres souris, la joie de voler les bribes du distributeur de Lucky…[line break]-- Hé ! hurle le chien.", 
+"Quand j'ai vu le corps de Julien entrer dans le sas, j'ai remarqué qu'il se déplaçait avec difficulté, marchant lentement et trébuchant, dit la scientist.[line break]-- Oui, je sais comment marcher, dit la tranche de cerveau, mais je le trouve désespérément difficile de le mettre en pratique.[line break]-- La souris n'aide pas, commente Lucky. Il bouge toujours les jambes.[line break]-- Moi ? dit le souris avec indignation. C'est toi qui veut toujours aller à quatre pattes.[line break]-- OK, dit la scientist, puis-je vous convaincre qu'une seule personne doit pilote le corps à la fois ?[line break]-- Oui, certainement, acquiesce la tranche de cerveau. Le volant est à toi.", 
+"D'accord, dit la scientist. Je m'empresse de faire ce qu'il faut pour obtenir le remède.[line break]-- Bon. Assez de papotage mes amis, laissez-la se concentrer, conseille la tranche de cerveau.[line break]-- Oui, d'accord, disent le chien et la souris."
 }
 
 Section Cured Dialogue
@@ -972,14 +970,14 @@ Section Cured Dialogue
 CuredDialogue is a list of text that varies. 
 	
 CuredDialogue is { 
-"C'est fait, dit la scientifique. Je ferai l'appel : Lucky ?[line break]-- Présent.[line break]-- Le Marquis de Souris ?[line break]-- Oui. Ici.[line break]-- Et la tranche de cerveau de Julien ?[line break]-- Présent.[line break]-- Bon, dit Isabelle, il me semble que nous sommes tous arrivés sauf et sain.",
-"Et maintenant on quitte l'installation ? suggère le chien.[line break]-- Oui, dit Isabelle[line break]-- Mais la porte extérieure est verrouillée. Personne ne peut l'ouvrir à part le colonel Greillier dans la salle de contrôle, dit la tranche de cerveau.[line break]-- Oui, nous devons le convaincre de l'ouvrir, acquiesce la scientifique.",
+"C'est fait, dit la scientist. Je ferai l'appel : Lucky ?[line break]-- Présent.[line break]-- Le Marquis de Souris ?[line break]-- Oui. Ici.[line break]-- Et la tranche de cerveau de Julien ?[line break]-- Présent.[line break]-- Bon, dit Isabelle, il me semble que nous sommes tous arrivés sauf et sain.",
+"Et maintenant on quitte l'installation ? suggère le chien.[line break]-- Oui, dit Isabelle[line break]-- Mais la porte extérieure est verrouillée. Personne ne peut l'ouvrir à part le colonel Greillier dans la salle de contrôle, dit la tranche de cerveau.[line break]-- Oui, nous devons le convaincre de l'ouvrir, acquiesce la scientist.",
 "Dis, ça me surprend un peu que tu te souviennes du colonel Greillier. J'ai pensé que tu avait oublié les noms.[line break]-- Du colonel ? demande la tranche de cerveau. Comment puis-je oublier le nom de ton boss ? C[apostrophe]était juste la dernière semaine qu'il est tombé dans la piscine pendant sa fête d'anniversaire. Je suppose que nous étions tous un tantinet bourrés ![line break]-- C'est quoi bourré ? demande la souris. Oh, je vois dans vos pensées. Ça a l'air amusant.[line break]-- Patientez un instant, Souris, dit Isabelle. Julien, c[apostrophe]était un souvenir compliqué. Penses-tu que ta mémoire est de retour ?[line break]-- Hein ? Comment pourrais-je savoir ?",
-"Julien, dit la scientifique, qu'est-ce que tu m'a donné en cadeau pour notre premier Noël ?[line break]-- Des gants ?[line break]-- Et ils était…[line break]-- Bien trop grands ! Oui, je les avais achetés pour mon frère, mais quand tu m'as donné un cadeau et je n'avais rien pour toi… oui… euh, es-tu toujours vexée ?[line break]-- Non, pas vraiment. Je testais juste ta mémoire.",
+"Julien, dit la scientist, qu'est-ce que tu m'a donné en cadeau pour notre premier Noël ?[line break]-- Des gants ?[line break]-- Et ils était…[line break]-- Bien trop grands ! Oui, je les avais achetés pour mon frère, mais quand tu m'as donné un cadeau et je n'avais rien pour toi… oui… euh, es-tu toujours vexée ?[line break]-- Non, pas vraiment. Je testais juste ta mémoire.",
 "Donne-moi un autre essai ![line break]-- D'accord. Comme est-ce que tu m'appelles quand nous sommes seuls ?[line break]-- Isabelle ?[line break]-- Non, réfléchis ! Quand c'est juste nous…[line break]-- Je préfère de ne pas le dire devant Lucky et la souris.[line break]-- Vas-y ! dit le chien. Nous partageons un esprit maintenant, il n'y a pas de vrais secrets entre nous.[line break]-- Très bien, dit Julien, je t'appelle mon lapin.[line break]-- Lapin ? dit la souris. Elle est un lapin ? Quoi ? Je suis totalement confus.",
-"Bon, Julien, il me semble que tu es en train de récupérer ta mémoire, dit la scientifique.[line break]-- Tu penses ? Pourtant tu m'as dit que je ne suis qu'une toute petite biopsie de cerveau. Est-il possible que les souvenirs soient les tiens et que je lise dans tes pensées ?[line break]-- Je dirais qu'une toute petite biopsie ne serait  guère capable de hasarder une telle hypothèse, il s'agit plutôt d'un cerveau entier en pleine forme.",
-"Si j'ai bien compris, dit Lucky, tu as dit que les cerveaux des zombies sont complètement effacés par le virus. Vu que rien ne reste de son cerveau, comment se fait-il qu'il peut fonctionner maintenant ?[line break]-- Nous n'avons jamais eu un pareil cas pour étudier, répond la scientifique. Il est temps de réviser notre compréhension du processus : il semble que les cerveaux ne sont pas détruits, mais plutôt supprimés. Ses voies neuronales ont toujours étés intactes. En fait, c'est grâce à eux que nous continuons à exister. Nous nous servons de ses voies pour formuler nos propres pensées.",
-"C'est super ! dit Julien. On peut restaurer tous les zombies ![line break]-- Mon dieu, Julien, vous avez raison. Ils ne sont plus perdus, répond la scientifique. Pour la première fois, il y a un espoir de restaurer le monde et terminer ce cauchemar.[line break]-- Même les chiens infectés ? demande Lucky.[line break]-- Oui, y compris les chien et toutes les autres espèces infectés par le virus, répond la scientifique.",
+"Bon, Julien, il me semble que tu es en train de récupérer ta mémoire, dit la scientist.[line break]-- Tu penses ? Pourtant tu m'as dit que je ne suis qu'une toute petite biopsie de cerveau. Est-il possible que les souvenirs soient les tiens et que je lise dans tes pensées ?[line break]-- Je dirais qu'une toute petite biopsie ne serait  guère capable de hasarder une telle hypothèse, il s'agit plutôt d'un cerveau entier en pleine forme.",
+"Si j'ai bien compris, dit Lucky, tu as dit que les cerveaux des zombies sont complètement effacés par le virus. Vu que rien ne reste de son cerveau, comment se fait-il qu'il peut fonctionner maintenant ?[line break]-- Nous n'avons jamais eu un pareil cas pour étudier, répond la scientist. Il est temps de réviser notre compréhension du processus : il semble que les cerveaux ne sont pas détruits, mais plutôt supprimés. Ses voies neuronales ont toujours étés intactes. En fait, c'est grâce à eux que nous continuons à exister. Nous nous servons de ses voies pour formuler nos propres pensées.",
+"C'est super ! dit Julien. On peut restaurer tous les zombies ![line break]-- Mon dieu, Julien, vous avez raison. Ils ne sont plus perdus, répond la scientist. Pour la première fois, il y a un espoir de restaurer le monde et terminer ce cauchemar.[line break]-- Même les chiens infectés ? demande Lucky.[line break]-- Oui, y compris les chien et toutes les autres espèces infectés par le virus, répond la scientist.",
 "Alors, que faire ? demande la souris.[line break]-- Julian, dit Isabelle, il faut parler avec le colonel pour le convaincre que tu es guéri et que nous possédons un remède contre le virus.[line break]-- D'accord. Je ferai de mon mieux, dit Julien.[line break]-- Allons-y ! crie la souris."
 }.
 
