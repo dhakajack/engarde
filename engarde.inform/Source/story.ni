@@ -646,18 +646,13 @@ Carry out simpleUnlocking:
 	repeat with way running through directions:
 		if the door the way of the location is locked:
 			now the door the way from the location is unlocked;
-			say "Vous entrez le code sur le pavé numérique et entendez se déverrouiller la porte ";
-			if the way is east or the way is west:
-				say "à l[apostrophe]";
-			otherwise:
-				say "au ";
-			say "[way].[no line break][one of][firstUnlocked][or][stopping][paragraph break]";
+			say "You enter the code on the numeric keypad and hear the door to the [way] unlock.[no line break][one of][firstUnlocked][or][stopping][paragraph break]";
 			stop the action;
-	say "Vous ne voyez aucune porte verrouillée."
+	say "You don't see any locked door."
 	
 To say firstUnlocked:
 	now the BlockChatterFlag is true;[hate to side effect this way, but here it seems expedient]
-	say "[paragraph break]« [italic type]Attends, dit le chien. Quel est ce nouveau truc ?[line break]-- Il faut introduire un code pour ouvrir les portes avec des serrures électroniques.[line break]-- Et tu te souviens de ce code ? demande la souris.[line break]-- Apparemment[roman type]. »[paragraph break]".
+	say "[paragraph break][italic type][quotation mark]Hang on a minute,[quotation mark] says the dog. [quotation mark]What kind of a trick is that?[quotation mark][line break][quotation mark]To unlock these doors with electronic locks, you have to enter the right code.[quotation mark][line break][quotation mark]And you remember the code?[quotation mark] asks the mouse.[line break][quotation mark]Apparently so.[quotation mark][roman type][paragraph break]".
 	
 Section simpleOpening
 
@@ -674,7 +669,7 @@ Carry out simpleOpening:
 		if the item is closed:
 			try opening the item;
 			stop the action;
-	say "Rien à ouvrir ici." 
+	say "There's nothing obvious to open here." 
 
 Section simpleEating
 
@@ -684,9 +679,9 @@ Carry out simpleEating:
 	repeat with the item running through visible edible things:
 		try eating the item;
 		stop the action;
-	say "Il n[apostrophe]y a rien à manger";
+	say "You don't see anything to eat";
 	if the tas de nourriture de chien is in the location:
-		say " (du moins, rien dont vous avez envie de manger)";
+		say " (at least, nothing that looks appetizing)";
 	say "."
 	
 Section simplePushing
@@ -697,7 +692,7 @@ Carry out simplePushing:
 	repeat with the item running through visible buttoned things:
 		try pushing the item;
 		stop the action;
-	say "Rien à appuyer ici."
+	say "There's nothing to push here."
 	
 Section simpleTalking
 
@@ -705,25 +700,25 @@ simpleTalking is an action applying to nothing. Understand "talk" as simpleTalki
 
 Check simpleTalking:
 	if the player is not in the sas:
-		say "Personne n'est présent. À qui parlez-vous[one of] ?[paragraph break]Voulez-vous que tout le monde pense que vous êtes débile[or][stopping] ?";
+		say "No one is around. Who are you talking to[one of]?[paragraph break]Do you want everyone to think you're nuts[or][stopping]?";
 		stop the action;
 	otherwise:
 		if the dépouille saignante du Docteur Rambaud is in the sas:
 			if the interphone is not live:
-				say "Pour parler avec la salle de contrôle, il faut d'abord allumer l'interphone.";
+				say "To talk to the control room, you must first activate the intercom.";
 				stop the action.
 				
 Carry out simpleTalking:
 	if the dépouille saignante du Docteur Rambaud is in the sas:
 		now the BlockChatterFlag is true;
 		if the curedFlag of the player is not true:
-			say "[one of]Vous expliquez votre plan. Le directeur de l'installation prend le micro et vous souhaite bon chance. Par ailleurs, il vous demande de rappeler quand vous avez réussi. À part ça, il ne faut pas utiliser l'interphone[or]La salle de contrôle refuse de vous parler jusqu[apostrophe]à ce que vous ayez en main un remède efficace[stopping]. Il raccroche et l'interphone s[apostrophe]éteint.";
+			say "[one of]You explain your plan. The director of the installation grabs the microphone and wishes you good luck. Beyond that, he instructs you report back when you have succeeded. Short of that, though, he requests that you not use the intercom[or]The control room refuses to talk to you until you have a proven cure in hand[stopping]. They hang up on you and the intercom goes dark.";
 			now the interphone is not live;
 		otherwise:
 			increase the conversations of the player by 1;
 			if the conversations of the player is:
 				-- 1:
-					say "« Salle de contrôle, Professeur Drummond à l'appareil.[line break]-- C'est ton chien, Lucky ! Je suis ici dans le sas ! Je suis tellement heureux de t'entendre ![line break]-- Euh… est-ce que vous vous moquez de moi ? L'interphone n'est que pour les communications officielles. Qui est-ce ?[paragraph break][italic type]-- C'est lui ! C'est le père de ma famille, dit Lucky.[line break]-- Calme toi, Lucky, insiste la scientist. Laisse Julien prendre le micro.[roman type][paragraph break]-- Excusez-moi, dit Julien. Je peux tout expliquer. Je suis Julien Truffaut.[line break]-- Le garde ?[line break]-- Oui.[line break]-- Impossible. Le docteur Rambaud a dit qu'il était devenu un zombie. Les zombies ne peuvent pas parler. Je n'ai pas de temps pour ces conneries. »[paragraph break]";
+					say "[quotation mark]Control room, Professeur Drummond speaking.[quotation mark][line break][quotation mark]It's your dog, Lucky! I'm in the airlock! I am so happy to hear your voice![quotation mark][line break][quotation mark]Um. Huh? Are you messing with me? The intercom is only for official communications. Who is this?[quotation mark][paragraph break][italic type][quotation mark]It's him! It's the father of my family,[quotation mark] says Lucky.[line break][quotation mark]Calm down, Lucky,[quotation mark] insists the scientist. Please let Julien do the talking.[quotation mark][roman type][paragraph break][quotation mark]Excuse me,[quotation mark] says Julien. [quotation mark]I can explain everything. I am Julien Truffaut.[quotation mark][line break][quotation mark]The guard?[line break][quotation mark]Yes.[quotation mark][line break][quotation mark]Impossible. Doctor Rambaud said that he had turned. Zombies can't talk. I don't have time for your crap, now get off the line.[quotation mark][paragraph break]";
 				-- 2:
 					say "« Je ne plaisante pas, dit Julien. Le docteur Rambaud m'a guéri.[line break]-- Assez, répond le professeur. Si elle est là, donnez-lui la parole.[line break]-- Elle est… occupée… en ce moment ». Pendant que vous parlez, vous traînez le corps inerte de la scientist vers l'escalier.[paragraph break]« Dites donc, continuez-vous, si vous méfiez de moi, activez la caméra de surveillance dans le sas. Vous me verrez.[line break]-- Attendez. »[paragraph break]";
 				-- 3:
