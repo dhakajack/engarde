@@ -28,12 +28,12 @@ Chapter The Player
 
 The player has a number called consciousness. The consciousness of the player is 0. The curedFlag of the player is a truth state that varies. The curedFlag of the player is false. The player has a number called conversations. The conversations of the player is 0.
 
-[Niveau					après avoir mangé….
-0					rien
-1					une souris
-2					un chien
-3					un morceau de cerveau d'un garde
-4					le cerveau d'un scientifique
+[Level					after eating….
+0					nothing
+1					a mouse
+2					a dog
+3					a slice of guard brain
+4					the scientist's brain
 ]
 
 The player has a number called knownCommands. The knownCommands of the player is 0.
@@ -75,8 +75,8 @@ To say exitList:
 
 Chapter Disable Keyboard
 
-[TODO: re-enable to kill keyboard. ]
-The focal event type of main input is hyperlink-event.
+[TODO: re-enable to kill keyboard. 
+The focal event type of main input is hyperlink-event.]
 
 When play begins:
 	Now the command prompt is "".
@@ -141,13 +141,13 @@ When play begins:
 	increment the knownCommands of the player.
 
 After printing the banner text:
-	say "[line break][italic type]Où suis-je ? D'ailleurs… qui suis-je ?[roman type][paragraph break]Vous vous réveillez tout seul dans une pièce plutôt banale et bleuâtre.[paragraph break][italic type]Pourquoi je ne me souviens de rien ?[paragraph break]Je dois me concentrer ! Qu'est-ce qui s'est passé ?[paragraph break]En tout cas, la solution n'est pas ici -- il faut explorer un peu.".
+	say "[line break][italic type]Where am I? For that matter, who am I?[roman type][paragraph break]You wake up alone in a plain room with a bluish hue.[paragraph break][italic type]Why can't I remember anything?[paragraph break]I've got to concentrate! What happened? Come on. Think! Think![paragraph break]In any case, the solution isn't here -- I'll have to have a look around."
 	
 Chapter Geography
 
 Section Location Generalities
 
-The printed name of a room is usually "Ici".
+The printed name of a room is usually "Here".
 
 Doors are usually closed. Doors are usually not locked.
 
@@ -162,19 +162,19 @@ Instead of going through a closed door (called la porte):
 		try looking;
 	otherwise:
 		if la porte is locked:
-			say "Cette porte est sous le contrôle d'une serrure électronique.";
+			say "This door is secured with an electronic lock.";
 		otherwise:
 			if la porte is buttoned:
-				say "D'abord, ";
+				say "First, you have to ";
 				if the player is in an elevator:
-					say "il faut sélectionner l[apostrophe]étage.";
+					say "indicate the destination floor.";
 				otherwise:
-					say "il faut appeler l'ascenseur.";
+					say "call the elevator";
 			otherwise:
-				say "La porte est fermée."
+				say "The door is closed"
 			
 To say bougePas:
-	say "Le mur ne bouge pas"
+	say "The wall does not budge"
 			
 Section Bloc Opératoire
 
@@ -183,28 +183,28 @@ Bloc Opératoire is a room. The description of Bloc Opératoire is "[descBlocOpe
 To say descBlocOperatoire:
 	if the consciousness of the player is:
 		-- 0:
-			say "Une pièce sombre[one of]. Rien d'intéressant ici[or][stopping]";
+			say "A dark room[one of]. Nothing interesting here[or][stopping]";
 		-- 1:
-			say "Il y a peu de sang ici -- une grande pièce bleue avec les murs métalliques";
+			say "There's a bit of blood here -- a huge, blue room with metallic walls";
 		-- 2:
-			say "La salle bleue où les humains coupent les animaux et enlèvent leurs tripes";
+			say "The blue room in which humans cut up animals and remove their guts";
 		-- 3:
-			say "La table d'opération trône au centre de la pièce bleue, entourée d[apostrophe]équipements chirurgicaux. La sortie à l'est mène au couloir";
+			say "The operating table stands in the middle of the blue room, surrounded by surgical equipment. The exit leads to the corridor";
 		-- 4:
-			say "La table d'opération couverte de draps chirurgicaux trône au centre de la salle en bleue, avec ses accessoires pour retenir les animaux pendant la chirurgie expérimentale. Juste à côté, il y a une machine d'anesthésie, des moniteurs de signes vitaux et une unité de radiographie portable. Le couloir central de niveau deux se trouve à l'est"
+			say "The operating table in the middle of the room is covered in blue surgical drapes. The table has various straps and contraptions to immobilize animals during surgery. Just next to the table is an anaesthesia machine, with knobs and dials, and tubes leading to the ceiling. Just above it, there are several vital signs monitors, all of which are off at present. A portable radiography machine has been wheeled in next to the table.[paragraph break]The central corridor for level two is just off to the east".
 			
 To say pnBlocOpératoire:
 	if the consciousness of the player is:
 		-- 0:
-			say "L'endroit bleuâtre";
+			say "The blue place";
 		-- 1:
-			say "L'endroit affreux";
+			say "The scary place";
 		-- 2:
-			say "La chambre de torture";
+			say "The torture chamber";
 		-- 3:
-			say "Salle d'opérations";
+			say "Operating room";
 		-- 4:
-			say "Bloc Opératoire".
+			say "Surgical theater".
 
 Section Couloir 2
 
@@ -213,35 +213,35 @@ Couloir 2 is a room. The description of Couloir 2 is "[descCouloir2]." The labZo
 To say descCouloir2:
 	if the consciousness of the player is:
 		-- 0:
-			say "Un couloir blanc et sans meuble";
+			say "A white, unfurnished hallway";
 		-- 1:
-			say "Un grand couloir blanc qui relie l'endroit affreux à l'ouest à la tanière du loup féroce au nord" ;
+			say "A great white corridor that connects the scary place to the west with the den of the fierce wolf to the north" ;
 		-- 2:
-			say "Le couloir qui mène de mon coin confortable au nord à la chambre de torture à l'ouest";
+			say "The hall that leads from my comfy nook to the north to the chamber of horrors to the west";
 			say "[liftDoorDogStatus]";
 		-- 3:
-			say "Le couloir central du deuxième niveau. La salle d'opérations se trouve à l'ouest, le chenil au nord, la laboratoire au sud et l'ascenseur à l'est";
+			say "The central corridor for level two. The operating room is to the west, the kennel to the north, the lab to the south, and the elevator to the east";
 		-- 4:
-			say "Le couloir central du deuxième niveau. La salle d'opération se trouve à l'ouest, la laboratoire zoologique au nord, la laboratoire biochimique au sud et l'ascenseur à l'est".
+			say "The central corridor for level two of the research complex. The operating theater is to the west, the animal laboratory is to the north, the biochemical synthesis laboratory to the south, and the elevator to the east".
 			
 To say liftDoorDogStatus:
 	if the door east from the location is closed:
-		say ". Au milieu du mur à l[apostrophe]est, un bouton brille avec une lueur rouge";
+		say ". A red button shines on the wall to the east";
 	otherwise:
-		say ". Le mur à l'est a disparu".
+		say ". The wall to the east has disappeared".
 			
 To say pnCouloir2:
 	if the consciousness of the player is:
 		-- 0:
-			say "Couloir";
+			say "Corridor";
 		-- 1:
-			say "Grand couloir";
+			say "Great Hall";
 		-- 2:
-			say "Couloir dangereux";
+			say "Dangerous Passage";
 		-- 3:
-			say "Couloir, niveau 2";
+			say "Corridor, Level 2";
 		-- 4:
-			say "Niveau 2: Expériences Physiologiques".
+			say "Level 2: Physiological Experiments".
 	
 		
 After going east from Couloir 2 when the ascenseur2door is open for the first time:
@@ -646,7 +646,7 @@ Chapter Verbs
 
 Section simpleUnlocking
 
-simpleUnlocking is an action applying to nothing. Understand "déverrouiller" as simpleUnlocking.
+simpleUnlocking is an action applying to nothing. Understand "unlock" as simpleUnlocking.
 
 Carry out simpleUnlocking:
 	repeat with way running through directions:
@@ -669,7 +669,7 @@ Section simpleOpening
 
 Definition: A door is simpleOpenable if it is closed and it is not locked and it is not buttoned.
 	
-simpleOpening is an action applying to nothing. Understand "ouvrir" as simpleOpening.
+simpleOpening is an action applying to nothing. Understand "open" as simpleOpening.
 
 Carry out simpleOpening:
 	repeat with the way running through directions:
@@ -684,7 +684,7 @@ Carry out simpleOpening:
 
 Section simpleEating
 
-simpleEating is an action applying to nothing. Understand "manger" as simpleEating.
+simpleEating is an action applying to nothing. Understand "eat" as simpleEating.
 
 Carry out simpleEating:
 	repeat with the item running through visible edible things:
@@ -697,7 +697,7 @@ Carry out simpleEating:
 	
 Section simplePushing
 
-simplePushing is an action applying to nothing. Understand "pousser" as simplePushing.
+simplePushing is an action applying to nothing. Understand "push" as simplePushing.
 
 Carry out simplePushing:
 	repeat with the item running through visible buttoned things:
@@ -707,7 +707,7 @@ Carry out simplePushing:
 	
 Section simpleTalking
 
-simpleTalking is an action applying to nothing. Understand "parler" as simpleTalking.
+simpleTalking is an action applying to nothing. Understand "talk" as simpleTalking.
 
 Check simpleTalking:
 	if the player is not in the sas:
@@ -757,7 +757,7 @@ Carry out simpleTalking:
 												
 Section simpleRepairing
 
-simpleRepairing is an action applying to nothing. Understand "réparer" as simpleRepairing.
+simpleRepairing is an action applying to nothing. Understand "repair" as simpleRepairing.
 
 Carry out simpleRepairing:
 	repeat with the item running through visible broken things:
@@ -778,7 +778,7 @@ To increment the consciousness of the player:
 
 Chapter Known Commands
 
-actionList is a list of text that varies. actionList is {"est", "ouest","manger","ouvrir","nord","sud","pousser","déverrouiller","parler","réparer"}
+actionList is a list of text that varies. actionList is {"east", "west","eat","open","north","south","push","unlock","talk","repair"}
 
 The commandList is a list of numbers that varies. The commandList is {}.
 
