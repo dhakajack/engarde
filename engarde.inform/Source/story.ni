@@ -244,7 +244,7 @@ To say pnCouloir2:
 After going east from Couloir 2 when the ascenseur2door is open for the first time:
 	now the BlockChatterFlag is true;
 	try looking;
-	say "« [italic type]Lucky, comment as-tu su ouvrir la boîte magique ?[line break]-- J'ai vu un bouton ; je l'ai appuyé. C'est ce que je fais. Alors, raconte-moi cette histoire de [quotation mark]boîte magique[quotation mark].[line break]-- Les géants… [line break]-- Ça veut dire les humains ?[line break]-- Oui, probablement. Ben, les humains, ils entrent dans la boîte et ils disparaissent. Plus tard, d'autres apparaissent à leur place. C'est magique.[line break]-- On verra.[roman type] »[paragraph break]".
+	say "[italic type][quotation mark]Lucky, how did you know how to open the magic box?[quotation mark][line break][quotation mark]I saw a button. I pushed it. That's what I do. So, what's all this about a [apostrophe]magic box[apostrophe]?[quotation mark][line break][quotation mark]The giants… [quotation mark][line break][quotation mark]You mean the humans?[quotation mark][line break][quotation mark]Sure, probably. Anyhow, the humans go into the box and they disappear. Later, other humans appear in the same box. It's got to be magic.[quotation mark][line break][quotation mark]Hmm. We'll see about that.[quotation mark][roman type][paragraph break]".
 			
 
 Section Laboratoire Zoologique
@@ -254,55 +254,54 @@ Laboratoire Zoologique is a room. The description of Laboratoire Zoologique is "
 To say descLabZoo:
 	if the consciousness of the player is:
 		-- 1:
-			say "De sa cage le loup méchant vous dévisage constamment";
+			say "From his cage, the vicious wolf stares at you";
 		-- 2:
-			say "La pièce dans laquelle ils vous avaient appris à appuyer sur le bouton rouge du distributeur de friandises";
+			say "The room in which you were taught to press a button to get treats out of the reward machine";
 		-- 3:
-			say "Une cage occupe la moitié de la pièce et le reste de l'espace est dédié au dressage des animaux";
+			say "A cage takes up half the space in this room; the rest is dedicated to animal training equipment";
 		-- 4:
-			say "Les animaux sont maintenus dans une cage d'une superficie de 15 mètres carrés, ce qui leur permet de rester actifs pendant des expériences qui peuvent durer des semaines. Un des dispositifs utilisés pour leur entraînement se trouve du côté de la cage[one of]. Vous constatez que la cage contient un placard : [quotation mark]Sujet 205-Alpha[quotation mark][or][stopping]"
+			say "Animals are kept here in a large cage, which allows them to remain active during experiments that can last up to several weeks[one of]. You notice a sign taped to the cage: [apostrophe]Subject 205-Alpha[apostrophe][or][stopping]."
 			
 
 To say pnLabZoo:
 	if the consciousness of the player is:
 		-- 1:
-			say "La tanière du loup";
+			say "The wolf's den";
 		-- 2:
-			say "Chez moi";
+			say "My home";
 		-- 3:
-			say "Le chenil";
+			say "The kennel";
 		-- 4:
-			say "Laboratoire Zoologique".
+			say "Zoological laboratory".
 	
 To say openNord:
-		say "Le mur au nord s'ouvre, révélant la pièce voisine".
-
+		say "The wall to the north slides aside, revealing the room next door."
 	
 The cage is an openable closed  container in the Laboratoire Zoologique. 
 
-The chien is an edible  thing. It is in the cage. The printed name of the chien is "[if the consciousness of the player is 1]loup[otherwise]chien[end if]". The chien can be dead. The chien is not dead.
+The chien is an edible  thing. It is in the cage. The printed name of the chien is "[if the consciousness of the player is 1]wolf[otherwise]dog[end if]". The chien can be dead. The chien is not dead.
 
-The corps de chien is a  thing. It is in the void.
+The corps de chien is a thing. It is in the void.
 
 The distributeur de nourriture is in the Laboratoire Zoologique. It is buttoned. 
 
 Instead of pushing the distributeur de nourriture:
-	say "Vous appuyez sur le bouton rouge. ";
+	say "You press the red button. ";
 	if the consciousness of the player is:
 		-- 2:
-			say "En récompense, quelques croquettes tombent au sol. Vous les mangez, mais le repas ne satisfait pas votre faim.";
+			say "In reward, a few nuggets fall to the ground. You eat them, but they do not satisfy your hunger.";
 		-- 3:
-			say "Vous n'avez la moindre envie de manger les croquettes de nourriture pour chien qui tombent à vos pieds.";
+			say "You don't find the reward nuggets that fall at your feet the least bit appetizing.";
 			move the tas de nourriture de chien to the Laboratoire Zoologique;
 		-- 4:
-			say "Le dispositif de conditionnement actif produit des cubes de nourriture pour chien qui s'accumulent sur le sol.";
+			say "The operant conditioning device dispenses a few dog food pellets that pile up on the ground.";
 			move the tas de nourriture de chien to the Laboratoire Zoologique.
 			
 The tas de nourriture de chien is in the void.
 
 Every turn when the chien is in the cage and the player is in the Laboratoire Zoologique:
 	if a random chance of 3 in 8 succeeds:
-		say "Le loup [one of]aboie bruyamment[or]mord les barres de sa cage[or]se gratte les oreilles[or]fait les cent pas dans sa boîte métallique[or]hurle à pleins poumons[or]renifle l'air[or]renifle sa cage[or]se renifle lui-même[or]se lèche les pattes[or]vous montre les dents[or]grogne de manière menaçante[or]vous ignore[or]court de long en large dans sa cage, vous dévisageant[in random order]."		
+		say "The wolf [one of]barks loudly[or]chews the bars of his cage[or]scratches his hears[or]paces back and forth in his metal cage[or]howls with all his might[or]sniffs the air[or]sniffs his cage[or]sniffs himself[or]licks his paws[or]shows you his teeth[or]growls menacingly[or]ignores you[or]runs the length of his cage, eying you[in random order]."		
 	
 		 
 Section Ascenseur 2
@@ -313,22 +312,22 @@ An elevatorDoor is a kind of door. ElevatorDoors are buttoned.
 
 To say pnAsc:
 	if the consciousness of the player is 2:
-		say "La petite pièce";
+		say "The little room";
 		if Ascenseur 2 is visited:
-			say " qui vibre";
+			say " that vibrates";
 	otherwise:
-		say "L'ascenseur".
+		say "The elevator".
 
 Ascenseur 2 is an elevator. The Ascenseur2door is an elevatorDoor. It is east of Couloir 2 and west of Ascenseur 2. 
 
 Instead of pushing an elevatorDoor:
-	say "Vous appuyez sur le bouton";
+	say "You push the button";
 	if the player is in an elevator:
 		if the consciousness of the player is:
 			-- 2:
-				say " avec votre museau[one of] (qui est devenu plus court que dans vos souvenirs)[or][stopping] et remarquez que la pièce vibre subtilement. Un instant plus tard, le mur s[apostrophe]ouvre donnant sur un couloir à l[apostrophe]ouest.";
+				say " with your snout[one of] (which seems shorter than you remember)[or][stopping] and notices a slight vibration. A moment later, the wall [apostrophe]opens upon a corridor to the west.";
 			-- otherwise:
-				say ", l'ascenseur [if the location is Ascenseur 2]descend au premier niveau[otherwise]monte au deuxième niveau[end if] et les portes à l'ouest s[']ouvrent."; 
+				say ", the elevator [if the location is Ascenseur 2]descends to the first level[otherwise]goes up to the second level[end if] and the doors open to the west."; 
 		if the player is in Ascenseur 2:
 			move the player to Ascenseur 1, without printing a room description;
 			now Ascenseur1door is open;
@@ -338,9 +337,9 @@ Instead of pushing an elevatorDoor:
 	otherwise:
 		if the consciousness of the player is:
 			-- 2:
-				say " et le mur s[apostrophe]ouvre vous permettant d'aller à l[apostrophe]est.";
+				say " and the wall slides open, allowing you to proceed to the east.";
 			-- otherwise:
-				say " et la porte de l[apostrophe]ascenseur à l[apostrophe]est s[apostrophe]ouvre.";
+				say " and the elevator door opens to the east.";
 		if the player is in Couloir 2:
 			now Ascenseur2door is open;
 		otherwise:
@@ -352,17 +351,17 @@ After going east from Couloir 2:
 		now the Ascenseur2door is closed.
 		
 To say portesReferment:
-	say "Vous ";
+	say "You ";
 	if the player is in an elevator:
-		say "entrez";
+		say "enter";
 	otherwise:
-		say "sortez";
-	say " et ";
+		say "leave";
+	say " and ";
 	if the consciousness of the player is less than 3:
-		say "le mur se referme";
+		say "the wall slides shut again";
 	otherwise:
-		say "les portes se referment";
-	say " silencieusement derrière vous".
+		say "the doors close";
+	say " silently behind you".
 	
 After going west from an Ascenseur 2:
 	say "[portesReferment].";
@@ -404,7 +403,7 @@ Couloir 1 is a room. The description of Couloir 1  is "[descCouloir1]." The prin
 To say descCouloir1:
 	if the consciousness of the player is:
 		-- 2:
-			say "Un couloir qui ressemble au « couloir dangereux » près de chez vous. Vous voyez [if labPathDoor is closed]une sortie au sud et un mur coulissant au nord[otherwise]des sorties au nord et au sud[end if]";
+			say "Un couloir qui ressemble au « couloir dangereux » près de chez vous. Vous voyez [if labPathDoor is closed]une sortie au ` et un mur coulissant au nord[otherwise]des sorties au nord et au sud[end if]";
 			say "[liftDoorDogStatus]"; 
 		-- 3:
 			say "Le couloir central du premier niveau donne vers les toilettes au sud, les douches à l'ouest, un labo au nord et l'ascenseur à l'est";
@@ -1042,9 +1041,9 @@ To say VictoryText:
 	
 Chapter Testing
 
-Test me with "est / ouest / manger / est / ouvrir / nord / ouvrir / manger / pousser / sud / pousser / est / pousser / ouest / sud / ouvrir / manger / manger / manger / nord / ouvrir / nord / ouvrir / ouvrir / manger / sud / ouest / déverrouiller / ouvrir / ouest / déverrouiller / ouvrir / nord / nord / déverrouiller / ouvrir / nord / parler / parler / parler / parler / parler / manger / sud / sud / sud / est / pousser / est / pousser / ouest / déverrouiller / ouvrir / sud / ouvrir / réparer / nord / pousser / est / pousser / ouest / ouest / nord / ouvrir / réparer / sud / est / pousser / est / pousser / ouest / sud / nord / pousser / est / pousser / ouest / ouest / nord / nord / nord / pousser / parler / parler / parler /  parler ".
+Test me with "east / west / eat /east / open / north / open / eat / push / south / push /east / push / west / south / open / eat / eat / eat / north / open / north / open / open / eat / south / west / unlock / open / west / unlock / open / north / north / unlock / open / north / talk / talk / talk / talk / talk / eat / south / south / south /east / push /east / push / west / unlock / open / south / open / repair / north / push /east / push / west / west / north / open / repair / south /east / push /east / push / west / south / north / push /east / push / west / west / north / north / north / push / talk / talk / talk /  talk ".
 
-Test full with "est / est / ouest / ouest / manger / est / ouest / ouvrir / est / ouvrir / nord / sud / ouest / sud / est / nord / z / z / z / z / z / z / z / z / z / z / z / manger / ouvrir / manger / pousser / manger / nord / sud / ouest / ouest / est / est / pousser / est / pousser / ouest / ouest / sud / ouvrir / pousser / manger / manger / manger / manger / nord / ouest / nord / nord / ouvrir / nord / manger / pousser / ouvrir / ouvrir / manger / sud / sud / ouvrir / pousser / nord / ouest / déverrouiller / ouest / ouvrir / ouest / nord / déverrouiller / nord / ouvrir / nord / nord / nord / nord / déverrouiller / nord / ouvrir / nord / manger / manger / manger / manger / manger / manger / pousser / déverrouiller / nord / parler / parler / parler / parler / parler / parler / manger / parler / pousser / parler / pousser / pousser / parler / nord / sud / sud / sud / ouvrir / réparer / ouvrir / réparer / pousser / sud / est / sud / pousser / ouvrir / manger / nord / nord / réparer / sud / pousser / est / pousser / ouest / ouest / est / nord / pousser / manger / réparer / sud / sud / déverrouiller / ouvrir / sud / réparer / ouvrir / réparer / nord / pousser / est / pousser / ouest / ouest / nord / ouvrir / réparer / sud / est / est / pousser / est / pousser / ouest / sud / réparer / nord / pousser / est / pousser / ouest / sud / nord / ouest / nord / nord / nord / manger /parler / pousser / parler / parler / sud / nord / parler / parler ".
+Test full with "est /east / west / west / eat /east / west / open /east / open / north / south / west / south /east / north / z / z / z / z / z / z / z / z / z / z / z / eat / open / eat / push / eat / north / south / west / west /east /east / push /east / push / west / west / south / open / push / eat / eat / eat / eat / north / west / north / north / open / north / eat / push / open / open / eat / south / south / open / push / north / west / unlock / west / open / west / north / unlock / north / open / north / north / north / north / unlock / north / open / north / eat / eat / eat / eat / eat / eat / push / unlock / north / talk / talk / talk / talk / talk / talk / eat / talk / push / talk / push / push / talk / north / south / south / south / open / repair / open / repair / push / south /east / south / push / open / eat / north / north / repair / south / push /east / push / west / west /east / north / push / eat / repair / south / south / unlock / open / south / repair / open / repair / north / push /east / push / west / west / north / open / repair / south /east /east / push /east / push / west / south / repair / north / push /east / push / west / south / north / west / north / north / north / eat /talk / push / talk / talk / south / north / talk / talk ".
 
 
 
