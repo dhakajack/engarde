@@ -6,14 +6,11 @@ The release number is 1.
 The story creation year is 2017.
 The story description is "The one thing you don't miss is memory."
 
-Include French by Eric Forgeot. 
 Include Basic Screen Effects by Emily Short.
 Include Glimmr Canvas-Based Drawing by Erik Temple.
 Include Glimmr Graphic Hyperlinks by Erik Temple.
 Include Glimmr Bitmap Font by Erik Temple.
 Include Glulx Input Loops by Erik Temple.
-
-Use French Language. 
 
 Use full-length room descriptions.
 Use no scoring.
@@ -281,13 +278,13 @@ To say openNord:
 		say "Le mur au nord s'ouvre, révélant la pièce voisine".
 
 	
-The cage is an openable closed female container in the Laboratoire Zoologique. 
+The cage is an openable closed  container in the Laboratoire Zoologique. 
 
-The chien is an edible male thing. It is in the cage. The printed name of the chien is "[if the consciousness of the player is 1]loup[otherwise]chien[end if]". The chien can be dead. The chien is not dead.
+The chien is an edible  thing. It is in the cage. The printed name of the chien is "[if the consciousness of the player is 1]loup[otherwise]chien[end if]". The chien can be dead. The chien is not dead.
 
-The corps de chien is a male thing. It is in the void.
+The corps de chien is a  thing. It is in the void.
 
-The distributeur de nourriture is in the Laboratoire Zoologique. It is buttoned and male. 
+The distributeur de nourriture is in the Laboratoire Zoologique. It is buttoned. 
 
 Instead of pushing the distributeur de nourriture:
 	say "Vous appuyez sur le bouton rouge. ";
@@ -377,7 +374,7 @@ Section Laboratoire Biochimique
 
 Laboratoire Biochimique is a room. The description of Laboratoire Biochimique is "[descLabBio]." The printed name of the Laboratoire Biochimique is "[pnLabBio]". 
 
-The labBioDoor is a female locked door. It is south of Couloir 2 and north of Laboratoire Biochimique. The printed name of the labBioDoor is "[pnLabBioDoor]".
+The labBioDoor is a  locked door. It is south of Couloir 2 and north of Laboratoire Biochimique. The printed name of the labBioDoor is "[pnLabBioDoor]".
 
 To say descLabBio:
 	if the consciousness of the player is:
@@ -473,9 +470,9 @@ To say pnFrigo:
 		-- 4:
 			say "congélateur pour spécimens de pathologie".
 
-The boîte en plastique is a female closed openable container in the frigo. The boîte en plastique is closed.
+The boîte en plastique is a  closed openable container in the frigo. The boîte en plastique is closed.
 
-The morceau de cerveau is a male edible thing in the boîte en plastique.
+The morceau de cerveau is a  edible thing in the boîte en plastique.
 
 After opening the labPathDoor:
 	say "[openNord]."
@@ -515,7 +512,7 @@ Instead of simpleOpening when the player is in Les Toilettes:
 		say "[if the potty is in Les Toilettes]Vous avez déjà soulevé[otherwise]Vous soulevez[end if] le couvercle des toilettes.";
 	now the potty is in Les Toilettes.
 	
-The potty is a female thing in the void. The printed name of the potty is "[pnPotty]".
+The potty is a  thing in the void. The printed name of the potty is "[pnPotty]".
 
 To say pnPotty:
 	if the consciousness of the player is less than 3:
@@ -549,7 +546,7 @@ Section Salle de Décontamination
 
 Salle de Décontamination is a room. The description of Salle de Décontamination is "[descDecon]." The printed name of the Salle de Décontamination is "[pnDecon]".
 
-The deconDoor is a female locked door. It is west of Couloir 1 and east of Salle de Décontamination. The printed name of the deconDoor is "[pnDeconDoor]".
+The deconDoor is a  locked door. It is west of Couloir 1 and east of Salle de Décontamination. The printed name of the deconDoor is "[pnDeconDoor]".
 
 To say descDecon:
 	if the consciousness of the player is:
@@ -577,7 +574,7 @@ Section Escalier 1
 
 Escalier 1 is a room. The description of Escalier 1  is "[descEscalier1]." The printed name of Escalier 1 is "Escalier (premier niveau)".
 
-The esc1door is a female locked door. It is north of Salle de Décontamination and south of Escalier 1.
+The esc1door is a  locked door. It is north of Salle de Décontamination and south of Escalier 1.
 
 The printed name of esc1door is "porte entre la salle de [if the consciousness of the player is 3]bain[otherwise]décontamination[end if] et l'escalier".
 
@@ -617,9 +614,9 @@ Section Sas
 
 Sas is a room. The description of Sas is "[descSas]." The printed name of the sas is "Sas".
 
-The sasDoor is a female locked door. It is north of Escalier 2 and south of Sas. The printed name of the sasDoor is "porte blindée du sas".
+The sasDoor is a  locked door. It is north of Escalier 2 and south of Sas. The printed name of the sasDoor is "porte blindée du sas".
 
-The scientifique is an edible female thing in the sas. The scientifique has a truth state called introducedFlag. The introducedFlag of scientifique is false. The scientifique has a number called conversations. The conversations of the scientifique is 0.
+The scientifique is an edible  thing in the sas. The scientifique has a truth state called introducedFlag. The introducedFlag of scientifique is false. The scientifique has a number called conversations. The conversations of the scientifique is 0.
 
 The indefinite article of the scientifique is "[if the introducedFlag of scientifique is true]le[otherwise]une[end if]". 
 
@@ -991,9 +988,9 @@ Chapter The Void
 
 The void is a room.
 
-The petite créature grise is an edible female thing. It is in the void.
+The petite créature grise is an edible  thing. It is in the void.
 
-The dépouille saignante du Docteur Rambaud is a female thing in the void. The indefinite article of dépouille saignante du Docteur Rambaud is "la".
+The dépouille saignante du Docteur Rambaud is a  thing in the void. The indefinite article of dépouille saignante du Docteur Rambaud is "la".
 
 The interphone is a buttoned thing in the void. The interphone can be live. The interphone is not live.
 
@@ -1028,7 +1025,7 @@ After opening the unité de synthèse microfluidique:
 	
 Instead of touching the servomoteur:
 	now the servomoteur is not broken;
-	say "Vous écartez le morceau de soudure. La machine doit fonctionner normalement maintenant."
+	say "Vous écartez le morceau de soudure. La machine doit fonctionner norment maintenant."
 
 Chapter End Game
 
