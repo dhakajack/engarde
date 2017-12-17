@@ -378,22 +378,22 @@ The labBioDoor is a  locked door. It is south of Couloir 2 and north of Laborato
 To say descLabBio:
 	if the consciousness of the player is:
 		-- 3:
-			say "Normalement, la pièce déborde d[apostrophe]équipements high-techs avec des lumières clignotantes et le bruit continuel des moteurs robotiques. Pourtant, en ce moment tous les équipements sont éteints et il n'y a le moindre son";
+			say "The room is lined floor to ceiling with high-tech equipment. On a typical day, the room would be full of blinking lights and the whir of robotic actuators, but right now the equipment is dark and you don't hear the slightest sound";
 		-- 4:
 			if the disjoncteurs are not broken:
-				say "L'alimentation électrique rétablie, la pièce est bien illuminée, les ordinateurs sont allumés et les équipements semblent en mesure de réaliser les synthèses biochimiques les plus complexes";
+				say "With power restored, the room is now lit up like a Christmas tree, the computer fans are whirring, and the microfluidic station stands ready to carry out even the most complex biochemical syntheses";
 			otherwise:
-				say "Rien ne fonctionne dans ce pièce sombre, ni les ordinateurs, ni le système robotique de synthèse moléculaire. Il est évident que c'est à cause d'un coupure d'alimentation électrique quelque part"
+				say "The room is entirely dark, and neither the computers nor the robotic molecular synthesis unit are working. It's obvious that somewhere electrical power to the room has been cut".
 					
 To say pnLabBio:
 	if the consciousness of the player is:
 		-- 3:
-			say "Laboratoire Biochimique";
+			say "Biochemical Laboratory";
 		-- 4:
-			say "Laboratoire De Synthèse Moléculaire".
+			say "Molecular Synthesis Laboratory".
 			
 To say pnLabBioDoor:
-	say "porte de la laboratoire".
+	say "laboratory door".
 	
 
 Section Couloir 1
@@ -403,21 +403,21 @@ Couloir 1 is a room. The description of Couloir 1  is "[descCouloir1]." The prin
 To say descCouloir1:
 	if the consciousness of the player is:
 		-- 2:
-			say "Un couloir qui ressemble au « couloir dangereux » près de chez vous. Vous voyez [if labPathDoor is closed]une sortie au ` et un mur coulissant au nord[otherwise]des sorties au nord et au sud[end if]";
+			say "A corridor that looks like the [quotation mark]dangerous hallway[quotation mark] near your cage. You see [if labPathDoor is closed]and exit to the south and a sliding door to the north[otherwise]exits to the north and south[end if]";
 			say "[liftDoorDogStatus]"; 
 		-- 3:
-			say "Le couloir central du premier niveau donne vers les toilettes au sud, les douches à l'ouest, un labo au nord et l'ascenseur à l'est";
+			say "The level one central corridor lies between the restrooms to the south, showers to the west, a lab to the north, and the elevator to the east";
 		-- 4:
-			say "Le couloir central du premier niveau donne vers les toilettes au sud, l'installation de décontamination à l'ouest, le laboratoire de pathologie au nord et l'ascenseur à l'est".
+			say "The central corridor on level one leads southward to the restroom, west to the decontamination suite, north to the histopathology laboratory, and east to the elevator".
 		
 To say pnCouloir1:
 	if the consciousness of the player is:
 		-- 2:
-			say "Nouveau couloir";
+			say "New corridor";
 		-- 3:
-			say "Couloir, niveau 1";
+			say "Corridor, level one";
 		-- 4:
-			say "Niveau 1: Bioconfinement".
+			say "Level 1: Biocontainment".
 			
 After going east from Couloir 1:
 		say "[portesReferment].";
@@ -429,7 +429,7 @@ Section Ascenseur 1
 Ascenseur 1 is an elevator. The Ascenseur1door is an elevatorDoor. It is east of Couloir 1 and west of Ascenseur 1. 
 
 To say descAscenseur1:
-	say "Un bouton vert brille sur un panneau".
+	say "A button shines on a panel".
 	
 After going west from an Ascenseur 1:
 	say "[portesReferment].";
@@ -443,31 +443,31 @@ Laboratoire de Pathologie is a room. The description of Laboratoire de Pathologi
 To say pnLabPath:
 	if the consciousness of the player is:
 		-- 2:
-			say "La cuisine";
+			say "The kitchen";
 		-- 3: 
-			say "Le labo préparatoire";
+			say "The prep lab";
 		-- 4:
-			say "Le laboratoire de pathologie".
+			say "The histopathology laboratory".
 
 To say descLabPath:
 	If the consciousness of the player is:
 		-- 2:
-			say "[one of]Cette pièce vous évoque les temps joyeux que vous avez passé en famille -- avant d[apostrophe]être enlevé. D'après les comptoirs, les étagères remplies de denrées, les éviers et les grands appareils, il s'agit sans aucun doute de la pièce la plus importante de la maison: la cuisine[or]Une cuisine ordinaire, meublé en noir[stopping]";
+			say "[one of]This room reminds you of better times that you spent with your family -- from before you were kidnapped. Considering the counters, shelves full of food, sinks, and large appliances, there's no doubt in your mind that this is the most important room in the entire house: the kitchen[or]A typical kitchen, with black decor[stopping]";
 		-- 3:
-			say "C'est ici où les scientifiques préparent les lames de microscope.[paragraph break]Vous reconnaissez une trancheuse à viande et un four à micro-ondes, mais la plupart de l[apostrophe]équipement sur le comptoir n'est pas familier";
+			say "This is where the researchers prepare microscope slides.[paragraph break]You recognize a meat slicer and a microwave oven, but most of the equipment on the counter doesn't look familiar to you";
 		-- 4:
-			say "Vous avez vous-même sélectionnée les équipements dernier cri trouvés dans ce laboratoire ultramoderne qui s'occupe de la préparation et de l'analyse des échantillons de tissus".
+			say "An ultramodern laboratory dedicated to preparation and analysis of tissue samples".
 	
 The frigo is a closed openable container in the Laboratoire de Pathologie. The frigo is closed. The printed name of the frigo is "[pnFrigo]".
 
 To say pnFrigo:
 	if the consciousness of the player is:
 		-- 2:
-			say "frigo";
+			say "fridge";
 		-- 3:
-			say "congélo";
+			say "freezer";
 		-- 4:
-			say "congélateur pour spécimens de pathologie".
+			say "minus 70 freezer for storing pathology specimens".
 
 The boîte en plastique is a  closed openable container in the frigo. The boîte en plastique is closed.
 
@@ -478,7 +478,7 @@ After opening the labPathDoor:
 	
 After going north from Couloir 1 when the labPathDoor is open for the first time:
 	now the BlockChatterFlag is true;
-	say "« [italic type]Oh là là ! dit Lucky avec joie.[line break]-- Pourquoi es-tu si content ?[line break]-- Vois-tu cette boîte-là ? Voilà la vraie boîte magique : le frigo ![line break]-- Est-ce qu'on fait des voyages dans un frigo ?[line break]-- Non, on mange ce qu'on trouve là-dedans ![roman type] »[paragraph break]";
+	say "[italic type][quotation mark]Mmmmm ! says Lucky, obviously excited.[quotation mark][line break][quotation mark]What are you so happy about?[quotation mark][line break][quotation mark]You see that box, there? That's the real magic box: the fridge![quotation mark][line break][quotation mark]Do we get in the fridge to go places?[quotation mark][line break][quotation mark]No, we eat what's inside it![quotation mark][roman type][paragraph break]";
 	try looking.
 
 
@@ -488,36 +488,36 @@ Les Toilettes is a room. The description of Les Toilettes is "[descToilettes]." 
 
 To say descToilettes:
 	if the consciousness of the player is less than 3:
-		say "L'odeur d'urine est forte ici[one of]. Beaucoup ont marqué leur territoire. Ce doit être un endroit très convoité[or][stopping]";
+		say "The scent of urine is strong here[one of]. Many have marked their territory. This must be an extremely desirable location[or][stopping]";
 	otherwise:
-		say "Un sol carrelé en noir et blanc, des cabinets, urinoirs et lavabos"
+		say "A black and white tiled floor, cabinets, urinals and sinks"
 	
 To say pnToilettes:
 	if the consciousness of the player is less than 3:
-		say "La pièce carrelée";
+		say "The tiled room";
 	otherwise:
-		say "Les toilettes".
+		say "The toilets".
 		
 Instead of simplePushing when the player is in les Toilettes:
 	if the consciousness of the player is less than 3:
-		say "Vous appuyez sur un bouton métallique et entendez un grand bruit.";
+		say "you press a metal button and immediately hear a loud sound.";
 	otherwise:
-		say "Vous tirez la chasse d'eau."
+		say "You pulll the flush lever."
 		
 Instead of simpleOpening when the player is in Les Toilettes:
 	if the consciousness of the player is less than 3:
-		say "[if the potty is in Les Toilettes]Le bol d'eau est déjà ouvert[otherwise]En soulevant la couverture d'un meuble, vous révélez un bol plein d'eau[end if].";
+		say "[if the potty is in Les Toilettes]The water bowl is already open[otherwise]Having lifted the cover, you reveal a bowl full of water[end if].";
 	otherwise:
-		say "[if the potty is in Les Toilettes]Vous avez déjà soulevé[otherwise]Vous soulevez[end if] le couvercle des toilettes.";
+		say "[if the potty is in Les Toilettes]You have already lifted[otherwise]You lift[end if] the toilet seat cover.";
 	now the potty is in Les Toilettes.
 	
 The potty is a  thing in the void. The printed name of the potty is "[pnPotty]".
 
 To say pnPotty:
 	if the consciousness of the player is less than 3:
-		say "bol plein d[apostrophe]eau";
+		say "bowl full of water";
 	otherwise:
-		say "toilettes (dont le couvercle est soulevé)". 
+		say "toilet (the cover of which has been lifted)". 
 		
 Instead of simpleEating when the player is in Les Toilettes:
 	if the potty is in the void:
@@ -525,11 +525,11 @@ Instead of simpleEating when the player is in Les Toilettes:
 	otherwise:
 		if the consciousness of the player is:
 			-- 2:
-				say "Vous [one of]lapez l'eau dans le bol. C'est rafraîchissante[or]n'avez pas vraiment soif, mais vous avalez un peu plus d'eau[or]n'avez plus soif ayant déjà avalé quelques litres d'eau[stopping].";
+				say "You [one of]lap up the water in the bowl. It's refreshing[or]you're not really thirsty, but you drink some water[or]you are no longer thirsty having already guzzled down a few liters of water[stopping].";
 			-- 3:
-				say "Non, ça serait dégoûtant[one of] (même pour quelqu'un qui mange les cerveaux)[or][stopping]."; 
+				say "No, that would be disgusting[one of] (even for someone who eats brains)[or][stopping]."; 
 			-- 4:
-				say "Vous rendez-vous compte combien d'espèces de bactéries pathogènes se trouvent dans cette eau ? Pas de la question."
+				say "Do you have any idea how many species are pathogenic bacteria live in the water? No way."
 				
 After going south from Couloir 1 when the consciousness of the player is 3 for the first time:
 		now the BlockChatterFlag is true;
