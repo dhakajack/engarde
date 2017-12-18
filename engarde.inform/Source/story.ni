@@ -864,20 +864,20 @@ Every turn:
 					remove entry 1 from mouseDialogue;
 			-- 2:
 				if the number of entries in mouseDogDialogue is greater than zero:
-					say "[italic type]« [entry 1 of mouseDogDialogue] »[roman type][paragraph break]";
+					say "[italic type][entry 1 of mouseDogDialogue][roman type][paragraph break]";
 					remove entry 1 from mouseDogDialogue;
 			-- 3:
 				if the number of entries in mouseDogGuardDialogue is greater than zero:
-					say "[italic type]« [entry 1 of mouseDogGuardDialogue] »[roman type][paragraph break]";
+					say "[italic type][entry 1 of mouseDogGuardDialogue][roman type][paragraph break]";
 					remove entry 1 from mouseDogGuardDialogue;
 			-- 4:
 				if the curedFlag of the player is true:
 					if the number of entries in CuredDialogue is greater than zero:
-						say "[italic type]« [entry 1 of CuredDialogue] »[roman type][paragraph break]";
+						say "[italic type][entry 1 of CuredDialogue][roman type][paragraph break]";
 						remove entry 1 from CuredDialogue;
 				otherwise:
 					if the number of entries in EverybodyDialogue is greater than zero:
-						say "[italic type]« [entry 1 of EverybodyDialogue] »[roman type][paragraph break]";
+						say "[italic type][entry 1 of EverybodyDialogue][roman type][paragraph break]";
 						remove entry 1 from EverybodyDialogue;
 	now the BlockChatterFlag is false.
 	
@@ -889,7 +889,7 @@ mouseDialogue is {
 "In any case, I seem to have grown quite a bit. Hmph.",
 "I've got a real hankering for something, I just can't quite put my paw on it.",
 "Let's see, what do I usually want?",
-"Sleep? Nope. Ddink? Nope. Sex? Nope.[paragraph break]My God! No? Am I sick?",
+"Sleep? Nope. Drink? Nope. Sex? Nope.[paragraph break]My God! No? Am I sick?",
 "Ah, that's it. I'm hungry.",
 "But hungry for what? That escapes me for the moment.",
 "For some cheese? No, not really.",
@@ -902,16 +902,16 @@ Section MouseDog Dialogue
 mouseDogDialogue is a list of text that varies. 
 
 mouseDogDialogue is {
-"Désolé[line break]-- Quoi, désolé ?[line break]-- Moi, je suis désolé de t'avoir mangé[line break]-- De m'avoir mangé ? Dis donc, qui es-tu ?[line break]-- La souris.",
-"La souris ? Quelle souris ?[line break]-- La souris qui habite ici.[line break]-- La maudite souris qui vole toujours les bribes autour de mon distributeur ?[line break]-- Ouais, la même. Une fois de plus, je suis désolé de t'avoir dérangé.",
-"Pas du tout. J'aurais fait pareil.[line break]-- Bon, merci.[line break]-- Dis, souris, as-tu un nom ?[line break]-- Non. Nous les souris n'ont pas les noms. Tu peux m'appeler simplement [quotation mark]Souris[quotation mark]. Et toi ? Comment tu t'appelles ?[line break]-- [quotation mark]Lucky[quotation mark]. C'est le nom que ma famille m'a donné avant que je sois arrivé ici. Les bourreaux me désignent [quotation mark]Sujet 205-Alpha[quotation mark], mais je préfère [quotation mark]Lucky[quotation mark].[line break]-- D'accord, Lucky.",
-"Souris, peux-tu m'expliquer quelque chose ? Je suis toujours perplexe. Comment se fait-il que toi, un souris, un animal tout petit, puisse manger un chien comme moi, plusieurs fois ta taille ?[line break]-- Je me suis demandé la même chose. Tiens -- t'es un chien ? Je pensais que tu étais un loup ![line break]-- Non, un chien.[line break]-- Ah bon ?[line break]-- Oui. J'en suis certain.",
-"Je n'arrive pas à comprendre exactement comment j'ai réussi à vous manger.[line break]-- Est-ce que tu te rappelles de l[apostrophe]événement ?[line break]-- J[apostrophe]étais pris d'une folle envie de cerveaux.[line break]-- Quel cerveau ?[line break]-- Dans ce cas, le tien.[line break]-- Ah, je vois… euh, non, pas vraiment.",
-"As-tu toujours vécu ici, Souris ?[line break]-- Plusieurs générations de ma famille ont vécu ici, c'est notre propriété héréditaire. On le défend contre les envahisseurs, les souris des campagnes qui ne sont que des abruties et des voleuses.[line break]-- As-tu jamais vu le monde en dehors d'ici ?[line break]-- Je n'en ai envie. J'ai entendu des contes, bien sûr : le ciel, les nuages, les champs, mais rien de tout cela ne m'intéresse.",
-"Et toi, Lucky ? Tu as mentionné une famille ? As-tu une femme (nous les souris ne croyons pas au mariage, mais j'ai entendu que les chiens sont plus traditionnels).[line break]-- Une famille, oui, mais pas de femme (bien qu'il y avait un caniche à côté… euh, mais c'est une autre histoire). Non, lorsque je parle de famille, il s'agit d'une famille humaine.",
-"Tu étais leur esclave ? demande la souris.[line break]-- Non, ce n[apostrophe]était pas comme ça. J'ai joué avec les enfants, ils m'ont donné de la nourriture, ils m'ont caressé toute la journée, et j'avais même mon propre lit.[line break]-- Tu rêves. Je n'ai jamais rien vu de pareil. Les humains n'aiment pas les animaux. Ils essaient toujours de nous écraser sous leurs semelles !",
-"Bah, tu ne connais que peu d'humains, réfute Lucky.[line break]-- Je n'ai aucune envie de les connaître de plus près.[line break]-- Tu aurais aimé ma famille.[line break]-- Alors, pourquoi as-tu quitté cette famille si remarquable ?[line break]-- Pas par choix. Nous étions dans un forêt, j'ai vu un écureuil, et je me suis perdu.[line break]-- Ne me parles pas d[apostrophe]écureuils. Ils sont pire que les souris sauvages !",
-"Lucky, penses-tu que tu retrouveras un jour ta famille ?[line break]-- Je l'espère.[line break]-- Moi aussi. Je veux chasser les écureuils avec toi.[line break]-- Ça serait génial."
+"[quotation mark]Sorry[quotation mark][line break][quotation mark]Sorry about what?[quotation mark][line break][quotation mark]I guess, I'm sorry that I ate you.[quotation mark][line break][quotation mark]Ate me? Who are you, anyhow?[quotation mark][line break][quotation mark]La souris.[quotation mark]",
+"[quotation mark]The mouse? What mouse[quotation mark][line break][quotation mark]The mouse who lives here.[quotation mark][line break][quotation mark]That damned mouse who is always swiping crumbs from around my food dispenser?[quotation mark][line break][quotation mark]Yes, one and the same. Once again, just wanted to say that I'm sorry if I upset you.[quotation mark]",
+"[quotation mark]Don't sweat it. I would have done the same.[quotation mark][line break][quotation mark]Thanks.[quotation mark][line break][quotation mark]Say, mouse, do you have a name?[quotation mark][line break][quotation mark]No, we mice don't have names. You can just call me [apostrophe]Mouse[apostrophe]. How about you? What's you name?[quotation mark][line break][quotation mark][apostrophe]Lucky[apostrophe]. Or, at least that's what my family called me before I got here. The torturers refer to me as [apostrophe]Sujet 205-Alpha[apostrophe], but I prefer [apostrophe]Lucky[apostrophe].[quotation mark][line break][quotation mark]Okay, Lucky.[quotation mark]",
+"[quotation mark]Mouse, can you explain something to me? I'm still confused. How can it be that you, a mouse tiny little mouse, could manage to eat a big strong dog like me, when I'm several times your size?[quotation mark][line break][quotation mark]You know, I've asked myself the same question. Hang on -- you're a dog? I thought you were a wolf![quotation mark][line break][quotation mark]Nope, a dog.[quotation mark][line break][quotation mark]Really?[quotation mark][line break]Yes, I'm pretty sure.[quotation mark]",
+"[quotation mark]I can't figure out how I managed to eat you.[quotation mark][line break][quotation mark][line break][quotation mark]I was seized by a sudden urge to eat brains.[quotation mark][line break][quotation mark]Brains? What brains?[quotation mark][line break][quotation mark]In this case -- yours.[quotation mark][line break][quotation mark]Ah, I see… no, not really.[quotation mark]",
+"[quotation mark]Have you always lived here, Mouse?[quotation mark][line break][quotation mark]My family has lived here for generations, it is our hereditary territory. We defend it against all invaders. Field mice are nothing but thugs and thieves.[quotation mark][line break][quotation mark]Have you ever seen the outside world?[quotation mark][line break][quotation mark]I don't have the slightest desire to do so. I've heard stories, of course: the sky, clouds, fields, and so on, but none that interests me.[quotation mark]",
+"[quotation mark]What about you, Lucky? You mentioned a family? Do you have a wife (we mice don't believe in marriage, but I've heard you dogs are more traditional)?[quotation mark][line break]A family, yes, but not a wife (although there was that poodle next door… but, um, that's another story). No, when I speak of family, I'm talking about a human family.[quotation mark]",
+"[quotation mark]You were their slave,[quotation mark] asks the mouse.[line break][quotation mark]No, it wasn't like that. I played with the kids, they fed me, they pet me all day, and I even had my own bed.[quotation mark][line break][quotation mark]You're dreaming. I've never seen anything like that. Humans don't like animals -- they're always trying to crush us under their heels.[quotation mark]",
+"[quotation mark]Meh, you don't know anything about humans,[quotation mark] refutes Lucky.[line break][quotation mark]I don't want to know them from any closer, thank you very much.[quotation mark][line break][quotation mark][line break][quotation mark]You would have liked my family.[quotation mark][line break][quotation mark]If that's the case, why did you leave such an amazing family, if I may ask?[quotation mark][line break][quotation mark]Not by choice. We were in a forest, I saw a squirrel, and you can figure out the rest. I never saw them again.[quotation mark][line break]Don't talk to me about squirrels. They're worse than wild mice.[quotation mark]",
+"[quotation mark]Lucky, do you think you'll one day find your family again?[quotation mark][line break][quotation mark]Hope so.[quotation mark][line break][quotation mark]Me too. I'd like to chase squirrels with you.[quotation mark][line break][quotation mark]Yeah, that would be great.[quotation mark]"
 }
 
 
