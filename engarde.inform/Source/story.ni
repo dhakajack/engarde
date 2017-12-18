@@ -733,15 +733,15 @@ Carry out simpleTalking:
 			-- 1:
 				say "You start babbling incoherently, the words refusing to come. As the sounds trip off your lips, the scientist stares at you incredulously.[paragraph break][quotation mark]Is it possible,[quotation mark] she asks. [quotation mark]Are you still capable of speaking somehow?[quotation mark][line break][quotation mark]Yes,[quotation mark] you groan painfully, [quotation mark]I… speak.[quotation mark][line break][quotation mark]Incredible! It's a miracle, Julien. What do you remember?[quotation mark][paragraph break][italic type][quotation mark]Julien? Who's Julien?[quotation mark] asks Lucky.[line break][quotation mark]Not me,[quotation mark] says the mouse. Maybe the name belongs to our buddy, the slice of brain?[quotation mark][line break][quotation mark]I don't recall, but sure, I guess I could be this Julien. I mean, why not?[quotation mark][roman type][paragraph break][quotation mark]Nothing. I don't remember a thing… Julien… that's me?[quotation mark][line break][quotation mark]Yes, Julien. It's you. And I'm your Isabelle. Isabelle Rambaud,[quotation mark]replies the scientist in a disappointed tone.[paragraph break]";
 			-- 2:
-				say "[italic type][quotation mark]She has pretty eyes (for a giant),[quotation mark] remarks the mouse.[line break][quotation mark]Shut up,[quotation mark] say the slice of brain and Lucky in unison.[roman type][paragraph break][quotation mark]You force yourself to form the words, one after another.[paragraph break][quotation mark]What are we doing here?[quotation mark][line break][quotation mark]Listen, Julien, I don't I much time. I am a medical researcher and you are a guard. We both work at an installation dedicated to finding a cure for the zombie777 virus, which has desolated the entire world.[quotation mark][line break][quotation mark]A guard?[quotation mark][line break][quotation mark]Yes. Pay attention, Julien, this is important. A crowd of infected individuals surrounded the lab complex and you were protecting me when you were scratched by one of them. I had to give you the experimental treatment to prevent you from turning into a zombie.[quotation mark][line break][quotation mark]So, I'm cured?[quotation mark][line break][quotation mark]No, far from that, I'd say[quotation mark][paragraph break]";
+				say "[italic type][quotation mark]She has pretty eyes (for a giant),[quotation mark] remarks the mouse.[line break][quotation mark]Shut up,[quotation mark] say the slice of brain and Lucky in unison.[roman type][paragraph break][quotation mark]You force yourself to form the words, one after another.[paragraph break][quotation mark]What are we doing here?[quotation mark][line break][quotation mark]Listen, Julien, I don't I much time. I am a medical researcher and you are a guard. We both work at an installation dedicated to finding a cure for the zombie777 virus, which has desolated the entire world.[quotation mark][line break][quotation mark]A guard?[quotation mark][line break][quotation mark]Yes. Pay attention, Julien, this is important. A crowd of infected individuals surrounded the lab complex and you were protecting me when you were scratched by one of them. I had to give you the experimental treatment to prevent you from turning into a zombie.[quotation mark][line break][quotation mark]So, I'm cured?[quotation mark][line break][quotation mark]No, not even close.[quotation mark][paragraph break]";
 			-- 3:
-				say "« Le traitement n'a pas marché ? demandez-vous.[line break]-- Pas entièrement, il me semble. J'ai eu un problème avec le système microfluidique de synthèse biomoléculaire qui a produit le traitement. Je crois qu'un composant a été omis dans la formule. J[apostrophe]étais en train de faire des réparations sur l'unité de synthèse quand tu m'a pris au dépourvu. Tu m'as attaqué, mais j'ai réussi à m'enfuir vers le sas. Et voilà où nous en sommes.[line break]-- Désolé.[line break]-- Ce n[apostrophe]était pas toi. Tu étais complètement transformé en zombie. Mais… comment se fait-il que tu puisse parler maintenant ? Les zombies n'en sont pas capables. »[paragraph break]";
+				say "[quotation mark]So, the treatment didn't work?[quotation mark] you ask.[line break][quotation mark]No, not entirely it would seem. I had a little problem with the microfluidic biosynthesis unit that produced the dose I gave you. I think that one of the ingredients must have been left out of that batch. I was trying to repair the unit when you caught me off guard. You attacked me, but I managed to hole up here in the airlock. So. That's where things stand.[quotation mark][line break][quotation mark]Sorry.[quotation mark][line break][quotation mark]It wasn't you. You were a full-blown zombie at the time. But… how is it that now you're able to talk? I've never heard of a zombie that could talk -- it just doesn't happen.[quotation mark][paragraph break]";
 			-- 4:
 				say "[quotation mark]It's really hard for us to talk.[quotation mark][line break][quotation mark]Naturally, your neural pathways are in a state of… hold on… what do you mean, [apostrophe]us[apostrophe]?[quotation mark][paragraph break][italic type][quotation mark]Tell her about me,[quotation mark] implores the mouse, full of excitement.[quotation mark][line break][quotation mark]And about me![quotation mark] adds Lucky.[roman type][paragraph break]Yeah. About that. I said [apostrophe]us[apostrophe] because there are three minds in my head: a mouse, a dog named Lucky, and a slice of brain. We work together as best we can to get around and talk.[quotation mark][line break][quotation mark]Well.[quotation mark] She stares a moment at the ceiling to gather her thoughts. [quotation mark]Well, I suppose that explains everything. You brain was rebooted, more or less erased by the virus, but somehow you have managed to reload it in a sense with normal brains. That slice of brain that you mentioned must have been the biopsie that I took from Julien before the virus had invaded that part of his brain.[quotation mark][paragraph break]";
 			-- 5:
-				say "« Alors, nous sommes bel et bien foutus ? dites-vous.[paragraph break][italic type]-- Tout à fait, grommelle la souris[line break]-- Oui, il me semble, accorde Lucky.[roman type][paragraph break]-- Peut-être que non… [line break]-- As-tu un plan ?[line break]-- Oui, je crois. Fais exactement ce que je te dis : Je suis en train de mourir, déjà je ne peux même pas bouger les jambes. Pourtant... Si tu manges mon cerveau -- attends, pas encore, laisse-moi arriver à la fin de mon discours -- si tu manges mon cerveau ma personnalité fusionnera avec les tiennes. Le virus est encore présent en toi et il va détruire ton cerveau, mais il a été ralenti par la première dose du traitement. S'il reste assez de temps, on peut réparer l'unité de synthèse et cette fois produire un traitement curatif. Je vivrai en toi, avec tes pensées.[line break]-- Alors, je dois manger ton cerveau maintenant ?[line break]-- Vas-y ! »[paragraph break]";
+				say "[quotation mark]So, we're well and truly screwed?[quotation mark] you say.[paragraph break][italic type][quotation mark]Totally,[quotation mark] whines the mouse.[line break][quotation mark]Yeah, I'd say so,[quotation mark] agrees Lucky.[roman type][paragraph break][quotation mark]Maybe not… [quotation mark][line break][quotation mark]You have an idea?[quotation mark][line break][quotation mark]Yes, I think so. Do exactly what I say: I don't have long for this world. I can't even feel my legs; it's only a matter of time. However… if you eat my brain -- hang on, not yet! Let me finish talking -- thanks. As I was saying, if you eat my brain, my personality will meld with all of yours. You are still actively infected with the virus and in time it will destroy what's left of your brain, but the infection seems to have been slowed by the first treatment, even if it wasn't completely effective. If there's enough time, I can repair the synthesis unit and we can try again. If we succeed this time, I can live on in you, along with your thoughts.[line break][quotation mark]So, I should eat your brain now?[quotation mark][line break][quotation mark]Go for it.[quotation mark][paragraph break]";
 			-- otherwise:
-				say "Il ne reste rien à dire."
+				say "There's nothing more to say."
 				
 												
 Section simpleRepairing
@@ -752,11 +752,11 @@ Carry out simpleRepairing:
 	repeat with the item running through visible broken things:
 		try touching the item;
 		stop the action;
-	say "Vous ne voyez rien à réparer."
+	say "You don't see anything in need of repair."
 	
 Instead of touching something (called the item):
 	now the item is not broken;
-	say "Vous réparez[the item]."
+	say "You repair [the item]."
 	[override touch with specific repair actions.]
 	
 Chapter Consciousness
@@ -787,23 +787,23 @@ Chapter Milestones
 
 After going east for the first time:
 	try looking;
-	say "Une petite créature arrive de nulle part, se faufile entre vos pieds, et s'enfuit vers l'ouest.";
+	say "A tiny creature zips out of nowhere, weaves between your feet, and flees to the west.";
 	increment the knownCommands of the player.
 	
 After going west from Couloir 2 for the first time:
-	move the petite créature grise to the Bloc Opératoire;
+	move the small gray creature to the Bloc Opératoire;
 	try looking;
-	say "Un petit animal gris se cache dans les ombres, tremblant.";
+	say "It hides in the shadows, trembling.";
 	increment the knownCommands of the player.
 	
-After eating the petite créature grise:
-	say "[line break]De votre main, vous balayez aveuglément les recoins à la base du mur. Malgré votre manque de vitesse et dextérité, par miracle vous réussissez à coincer le petit rongeur contre le mur. Vous vous empressez de le saisir fermement et sentez quelque chose de chaud, poilu, et maintenant, mouillé au fond de votre main. Sans y penser plus, vous le mangez précipitamment.[paragraph break]Après un petit moment, de nouvelles pensées vous frappent. Pris au dépourvu, vous frissonnez.[paragraph break][italic type]Au secours ! Un énorme monstre me poursuit ! Il va me manger ! il faut me dissimuler.[paragraph break]Je… euh.  Suis-je mort ou quoi ? Je ne comprends pas.[roman type].";
+After eating the small gray creature:
+	say "[line break]You blindly sweep the base of the wall with your hand. Despite your lack of speed and dexterity, by some miracle you manage to trap the tiny roden against the wall. You seize it firmly and feel something warm, furry, and now moist, melt in your hand. Without another thought, you pop it into your mouth and swallow.[paragraph break]A moment later, you are overcome as new thoughts flood your mind.[paragraph break][italic type]Help! A giant monster is after me! It's going to eat me! I have to hide.[paragraph break]I…um.  Am I dead or what? I don't get it. What's going on?[roman type].";
 	increment the consciousness of the player.
 	
 After going east when the consciousness of the player is 1 for the first time:
 	try looking;
 	now the BlockChatterFlag is true;
-	say "[italic type]Ah, le grand couloir blanc.[paragraph break]Combien de fois est-ce que j'ai vu les géants marcher à travers les murs lisses pour entrer dans les pièces secrètes ? Comment le font-ils ?[roman type][paragraph break]";
+	say "[italic type]Ah, the great white hallway.[paragraph break]How many times I have seen the giants walk right through the smooth walls into secret rooms? How do they do it?[roman type][paragraph break]";
 	increment the knownCommands of the player.
 	
 After opening the labZooDoor:
@@ -811,34 +811,34 @@ After opening the labZooDoor:
 	increment the knownCommands of the player.
 	
 After going north from Couloir 2 for the first time:
-	say "Vous pénétrez dans la tanière du loup, un endroit bien connu mais toujours effrayant. Comme d'habitude le loup est emprisonné dans sa cage et vous êtes libre d'explorer, hors de portée de ses mâchoires baveuses.";
+	say "You sneak into the wolf's den, a place that is well known to you, but still scary. As usual, the wolf is imprisoned in an iron cage and you are free to explore, beyond the reach of his slaving fangs.";
 	try looking;
 	increment the knownCommands of the Player.
 	
 After opening the cage:
-	say "Vous ouvrez la cage mais le loup reste prudemment à l'intérieur."
+	say "You open the cage, but the wolf remains prudently inside, watching you."
 	
 After eating the chien:
 	now the chien is dead;
 	now the corps de chien is in the cage;
-	say "D'instinct, vous dévorez son cerveau et jetez le corps dans la cage. Encore une fois, de nouvelles pensées envahissent votre esprit.[paragraph break][italic type]Je vous préviens : si vous approchez de ma cage, je vous mordrai. Arrêtez ! Sans blague… [paragraph break]Mais, qu'est-ce qui se passe ? Qui est ce chien mort dans ma cage… dont le sang coule sur mon coussin préféré ?[paragraph break]Et pourquoi est-ce que je me tiens debout sur deux jambes à la façon des êtres humains ? C'est en fait plus facile que j'aurais pensé.";
+	say "Out of instinct, you eat its brain and throw the body back into the cage. Once again, new throughts invade your mind.[paragraph break][italic type]I'm warning you: if you get near my cage, I'll eat you. Stop! I'm not kidding…[paragraph break]Huh? What's going on? What's that dead dog doing in my cage… bleeding on my favorite pillow?[paragraph break]And what am I doing standing on my hind legs like a human? It seems to be easier than I would have thought.";
 	increment the consciousness of the player;
 	increment the knownCommands of the player.
 	
 After eating the morceau de cerveau:
-	say "En mâchant la tranche de cerveau, vous sentez un saveur désagréable, mais ça s'estompe presque immédiatement.[paragraph break]Pendant quelques moments rien ne se passe et vous vous demandez si vous pouvez maintenant manger n'importe quoi en toute impunité.[paragraph break]Soudain, le monde passe du monochrome à la couleur vive. Une vague électrique parcourt votre esprit et vous vous effondrez, désorienté. Lorsque vous vous mettez debout, des nouvelles idées se mêlent à vos pensées et vous voyez tout sous un nouveau jour.";
+	say "While eating the slice of brain you notice that the flavor is a little bit off.[paragraph break]Nothing happens for a few minutes, and you begin to wonder if you can now eat just anything you find without having to worry about it.[paragraph break]Suddenly, the world explodes from black and white into full, vibrant color. A wave of electricity courses through your mind and you collapse, disoriented. As you stand back up, new ideas blend into your thoughts and you see everything in a new light.";
 	increment the consciousness of the player;
 	increment the knownCommands of the player.
 	
 After going north from Escalier 2 when the sasDoor is not locked for the first time:
 	now the BlockChatterFlag is true;
-	say "Une femme d'une quarantaine d'années vêtue d'une blouse blanche est assise derrière un bureau en métal. Elle est à mi-chemin entre vous et la porte à l'autre bout de la pièce. Elle semble gravement blessée et saigne d'une blessure au bras qu'elle a bandé de gaze stérile. Dans son autre main, elle brandit un pied-de-biche.";
+	say "A women in her forties, dressed in a white lab coat sits behind a metal desk. She is half way between you and the door at the other end of the room. Her upper right arm is swathed in gauze, but the bandages are drenched in blood and she appears gravely injured. In her other hand, she brandishes a crowbar with determination.";
 	try looking;
 	increment the knownCommands of the player.
 	
 After eating scientist:
 	now the BlockChatterFlag is true;
-	say "Vous dévorez le cerveau de la scientist. Immédiatement vous voyez le monde d'un point de vue plus raffiné et érudit.[paragraph break]« [italic type]C'est fait ? demande la voix d'Isabelle avec hésitation.[line break]-- Oui, tu étais délicieuse, enthousiasme le souris.[line break]-- Le meilleur jusqu'ici, ajoute Lucky.[line break]-- Excuse mes co-esprits, ils manquent cruellement de tact, intervient la tranche de cerveau.[line break]-- Hé ! gémissent la souris et le chien.[line break]-- Sois la bienvenue, Isabelle, continue la tranche de cerveau. Laisse-moi te présenter notre petite troupe : voilà Lucky, le chien, et ici figure Le Marquis Des Souris (ou juste simplement [quotation mark]Souris[quotation mark] parce qu'il est plutôt modeste), et moi, je suis le nommé [quotation mark]tranche de cerveau[quotation mark]. On est à ta disposition.[line break]-- Bonjour, les gars, dit Isabelle avec chaleur.  »[paragraph break]";
+	say "You eat the scientist's brain and immediately perceive the world from a more refined and erudite perspective.[paragraph break][italic type][quotation mark]Is it done,[quotation mark] asks the voice of Isabelle with hesitation.[line break][quotation mark]Yes, you were delicious,[quotation mark] compliments the mouse.[line break][quotation mark]The best yet,[quotation mark] adds Lucky.[line break][quotation mark]Excuse my co-brains, they are sorely lacking in tact,[quotation mark] interjects the slice of brain.[line break][quotation mark]Hey![quotation mark] complain the mouse and dog.[line break][quotation mark]Make yourself at home, Isabelle,[quotation mark] continues the slice of brain. [quotation mark]Let me present our little company: here's Lucky the dog, and that's the Duke of Mousedom (or just [apostrophe]the mouse[apostrophe], as he's rather modest), and me. I'm the one they call [apostrophe]slice of brain[apostrophe]. We are at your service.[quotation mark][line break][quotation mark]Good morning, boys,[quotation mark] says Isabelle warmly.[paragraph break]";
 	move the dépouille saignante du Docteur Rambaud to the sas;
 	move the interphone to the sas;
 	move the panneau électrique to escalier 1;
@@ -854,7 +854,7 @@ Every turn:
 	if the curedFlag of the player is not true:
 		if the disjoncteurs are not broken and the servomoteur is not broken and the player is in the Laboratoire Biochimique:
 			now the BlockChatterFlag is true;
-			say "L'appareil robotique émit un bip et remplit un flacon du fluide fluo vert. Vous le prenez anxieusement, portez un toast à votre propre santé, et buvez le remède à grandes gorgées.[paragraph break]« Je ne ressens rien, s'inquiète la tranche de cerveau.[line break]-- Attendez, rassure Isabelle.[line break]-- Moi non plus, opine la souris.[line break]-- Attendez, insiste la scientist.[line break]-- Houlà ! s'exclame Lucky. Quelque chose commence à…[line break]-- C'est parti ! hurle le docteur.  »[paragraph break]Vous tremblez violentement et vous vous évanouissez. Lorsque vous vous levez, vous observez que votre peau a repris son teint naturel et que vous pouvez vous déplacer sans trébucher. Bref, vous êtes guéri.[paragraph break]";
+			say "The robotic workstation emits a beep and fills a flask with fluorescent green fluid. You take the flask, propose a short toast to yourself, and kick it back in one gulp.[paragraph break][quotation mark]I don't feel anything,[quotation mark] worries the slice of brain.[line break][quotation mark]Wait for it,[quotation mark] reassures Isabelle.[line break][quotation mark]Me neither,[quotation mark] pipes up the mouse.[line break][quotation mark]Wait for it,[quotation mark] insists the scientist.[line break][quotation mark]Oh my![quotation mark] barks Lucky. [quotation mark]Something's starting to…[line break][quotation mark]And we're off![quotation mark] shouts the doctor.[paragraph break]You shake violently and pass out. When you are able to stand up again, you note that you skin has recovered its normal tint and that you can walk without lurching back and forth. In short, you've been cured.[paragraph break]";
 			now the curedFlag of the player is true;
 	if the BlockChatterFlag is false:
 		if the consciousness of the player is:
@@ -886,15 +886,15 @@ Section Mouse Dialogue
 mouseDialogue is a list of text that varies. 
 	
 mouseDialogue is {
-"Quoi qu'il en soit, il me semble que j'ai beaucoup grandi, hein.",
-"Je désire quelque chose fortement, mais j'ai du mal à dire quoi.",
-"Voyons, quel sont mes envies habituelles ?",
-"Dormir ? Non. Boire ? Non. Faire l'amour ? Non.[paragraph break]Mon dieu ! Non ? Est-ce que je suis malade ?",
-"Eh bien, j'ai faim.",
-"De quoi est-ce que j'ai envie de manger ? Cela m[apostrophe]échappe pour le moment.",
-"Du fromage ? Non, pas vraiment.",
-"Je cherche quelque chose fr plus moelleux, plus juteux.",
-"Je le saurai quand je le verrai, je suppose."
+"In any case, I seem to have grown quite a bit. Hmph.",
+"I've got a real hankering for something, I just can't quite put my paw on it.",
+"Let's see, what do I usually want?",
+"Sleep? Nope. Ddink? Nope. Sex? Nope.[paragraph break]My God! No? Am I sick?",
+"Ah, that's it. I'm hungry.",
+"But hungry for what? That escapes me for the moment.",
+"For some cheese? No, not really.",
+"I'm looking for something soft, juicy...",
+"I guess I'll know it when I see it."
 }.
 
 Section MouseDog Dialogue	
@@ -980,7 +980,7 @@ Chapter The Void
 
 The void is a room.
 
-The petite créature grise is an edible  thing. It is in the void.
+The small gray creature is an edible  thing. It is in the void.
 
 The dépouille saignante du Docteur Rambaud is a  thing in the void. The indefinite article of dépouille saignante du Docteur Rambaud is "la".
 
