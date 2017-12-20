@@ -275,7 +275,7 @@ To say pnLabZoo:
 			say "Zoological laboratory".
 	
 To say openNord:
-		say "The wall to the north slides aside, revealing the room next door."
+		say "The wall to the north slides aside, revealing the room next door"
 	
 The cage is an openable closed  container in the Laboratoire Zoologique. 
 
@@ -797,7 +797,7 @@ After going west from Couloir 2 for the first time:
 	increment the knownCommands of the player.
 	
 After eating the small gray creature:
-	say "[line break]You blindly sweep the base of the wall with your hand. Despite your lack of speed and dexterity, by some miracle you manage to trap the tiny roden against the wall. You seize it firmly and feel something warm, furry, and now moist, melt in your hand. Without another thought, you pop it into your mouth and swallow.[paragraph break]A moment later, you are overcome as new thoughts flood your mind.[paragraph break][italic type]Help! A giant monster is after me! It's going to eat me! I have to hide.[paragraph break]I…um.  Am I dead or what? I don't get it. What's going on?[roman type].";
+	say "[line break]You blindly sweep the base of the wall with your hand. Despite your lack of speed and dexterity, by some miracle you manage to trap the tiny rodent against the wall. You seize it firmly and feel something warm, furry, and now moist, melt in your hand. Without another thought, you pop it into your mouth and swallow.[paragraph break]A moment later, you are overcome as new thoughts flood your mind.[paragraph break][italic type]Help! A giant monster is after me! It's going to eat me! I have to hide.[paragraph break]I…um.  Am I dead or what? I don't get it. What's going on?[roman type].";
 	increment the consciousness of the player.
 	
 After going east when the consciousness of the player is 1 for the first time:
@@ -966,15 +966,15 @@ Section Cured Dialogue
 CuredDialogue is a list of text that varies. 
 	
 CuredDialogue is { 
-"C'est fait, dit la scientist. Je ferai l'appel : Lucky ?[line break]-- Présent.[line break]-- Le Marquis de Souris ?[line break]-- Oui. Ici.[line break]-- Et la tranche de cerveau de Julien ?[line break]-- Présent.[line break]-- Bon, dit Isabelle, il me semble que nous sommes tous arrivés sauf et sain.",
-"Et maintenant on quitte l'installation ? suggère le chien.[line break]-- Oui, dit Isabelle[line break]-- Mais la porte extérieure est verrouillée. Personne ne peut l'ouvrir à part le colonel Greillier dans la salle de contrôle, dit la tranche de cerveau.[line break]-- Oui, nous devons le convaincre de l'ouvrir, acquiesce la scientist.",
-"Dis, ça me surprend un peu que tu te souviennes du colonel Greillier. J'ai pensé que tu avait oublié les noms.[line break]-- Du colonel ? demande la tranche de cerveau. Comment puis-je oublier le nom de ton boss ? C[apostrophe]était juste la dernière semaine qu'il est tombé dans la piscine pendant sa fête d'anniversaire. Je suppose que nous étions tous un tantinet bourrés ![line break]-- C'est quoi bourré ? demande la souris. Oh, je vois dans vos pensées. Ça a l'air amusant.[line break]-- Patientez un instant, Souris, dit Isabelle. Julien, c[apostrophe]était un souvenir compliqué. Penses-tu que ta mémoire est de retour ?[line break]-- Hein ? Comment pourrais-je savoir ?",
-"Julien, dit la scientist, qu'est-ce que tu m'a donné en cadeau pour notre premier Noël ?[line break]-- Des gants ?[line break]-- Et ils était…[line break]-- Bien trop grands ! Oui, je les avais achetés pour mon frère, mais quand tu m'as donné un cadeau et je n'avais rien pour toi… oui… euh, es-tu toujours vexée ?[line break]-- Non, pas vraiment. Je testais juste ta mémoire.",
-"Donne-moi un autre essai ![line break]-- D'accord. Comme est-ce que tu m'appelles quand nous sommes seuls ?[line break]-- Isabelle ?[line break]-- Non, réfléchis ! Quand c'est juste nous…[line break]-- Je préfère de ne pas le dire devant Lucky et la souris.[line break]-- Vas-y ! dit le chien. Nous partageons un esprit maintenant, il n'y a pas de vrais secrets entre nous.[line break]-- Très bien, dit Julien, je t'appelle mon lapin.[line break]-- Lapin ? dit la souris. Elle est un lapin ? Quoi ? Je suis totalement confus.",
-"Bon, Julien, il me semble que tu es en train de récupérer ta mémoire, dit la scientist.[line break]-- Tu penses ? Pourtant tu m'as dit que je ne suis qu'une toute petite biopsie de cerveau. Est-il possible que les souvenirs soient les tiens et que je lise dans tes pensées ?[line break]-- Je dirais qu'une toute petite biopsie ne serait  guère capable de hasarder une telle hypothèse, il s'agit plutôt d'un cerveau entier en pleine forme.",
-"Si j'ai bien compris, dit Lucky, tu as dit que les cerveaux des zombies sont complètement effacés par le virus. Vu que rien ne reste de son cerveau, comment se fait-il qu'il peut fonctionner maintenant ?[line break]-- Nous n'avons jamais eu un pareil cas pour étudier, répond la scientist. Il est temps de réviser notre compréhension du processus : il semble que les cerveaux ne sont pas détruits, mais plutôt supprimés. Ses voies neuronales ont toujours étés intactes. En fait, c'est grâce à eux que nous continuons à exister. Nous nous servons de ses voies pour formuler nos propres pensées.",
-"C'est super ! dit Julien. On peut restaurer tous les zombies ![line break]-- Mon dieu, Julien, vous avez raison. Ils ne sont plus perdus, répond la scientist. Pour la première fois, il y a un espoir de restaurer le monde et terminer ce cauchemar.[line break]-- Même les chiens infectés ? demande Lucky.[line break]-- Oui, y compris les chien et toutes les autres espèces infectés par le virus, répond la scientist.",
-"Alors, que faire ? demande la souris.[line break]-- Julian, dit Isabelle, il faut parler avec le colonel pour le convaincre que tu es guéri et que nous possédons un remède contre le virus.[line break]-- D'accord. Je ferai de mon mieux, dit Julien.[line break]-- Allons-y ! crie la souris."
+"[quotation mark]It's done,[quotation mark] says the scientist. [quotation mark]Time for roll call: Lucky?[line break][quotation mark]Here.[quotation mark][line break][quotation mark]The Duke of Mousedom?[quotation mark][line break][quotation mark]Present.[quotation mark][line break][quotation mark]The slice of Julien's brain?[quotation mark][line break][quotation mark]Here.[quotation mark][line break][quotation mark]Good,[quotation mark] says Isabelle, [quotation mark]it sounds like we all made it safe and sound.[quotation mark]",
+"[quotation mark]So, now we get out of here?[quotation mark] suggests the dog.[line break][quotation mark]Yes,[quotation mark] says Isabelle.[line break][quotation mark]But the exterior airlock door is still electronically locked. No one can open it aside from Colonel Greillier in the control room,[quotation mark] says the slice of brain.[line break][quotation mark]Yes, we will need to convince him to open it,[quotation mark] agrees the scientist.",
+"[quotation mark]That sort of surprises me, that you remember Colonel Greillier. I thought that you couldn't remember names.[quotation mark][line break][quotation mark]Of the Colonel?[quotation mark] asks the slice of brain. [quotation mark]How could I forget your boss? Just last week he tumbled into our pool at his birthday party. I suppose we were all a little soused that evening.[quotation mark][line break][quotation mark]Soused?[quotation mark] asks the mouse. [quotation mark]Oh, I can see it in your thoughts. Soused, huh? Looks like fun.[quotation mark][line break][quotation mark]Hang on a minute, mouse.[quotation mark] says Isabelle, [quotation mark]Julien, you just expressed a complicated thought. Do you think your memory is returning?[quotation mark][line break][quotation mark]Hmph. How could I know?[quotation mark]",
+"[quotation mark]Julien,[quotation mark] says the scientist, [quotation mark]What did you give me as a gift our first Christmas?[quotation mark][line break][quotation mark]Gloves?[quotation mark][line break][quotation mark]And they were… [quotation mark][line break][quotation mark]Far too large for you! Yes, I had bought them for my brother, but when you gave me a present and I didn't have anything for you… yes, um, are you still upset about that?[quotation mark][line break][quotation mark]No, not really. I was just testing your memory.[quotation mark]",
+"[quotation mark]Give me another test![quotation mark][line break][quotation mark]Okay. What do you call me when we're all alone?[quotation mark][line break][quotation mark]Isabelle?[quotation mark][line break][quotation mark]No, think! When it's just the two of us… [quotation mark][line break][quotation mark]I'd rather not say in front of Lucky and the mouse.[quotation mark][line break][quotation mark]Oh, come on,[quotation mark] says the dog. [quotation mark]We're all sharing one mind now; there aren't any real secrets here.[quotation mark][line break][quotation mark]Very well,[quotation mark] says Julien, still a bit hesitant, [quotation mark]I call you my bunny rabbit.[quotation mark][line break][quotation mark]Bunny?[quotation mark] says the mouse. [quotation mark]She used to be a rabbit? Now I am totally confused.[quotation mark]",
+"[quotation mark]Good, Julien, it seems to me that you're on the road to recoving your memory,[quotation mark] says the scientist.[line break][quotation mark]You think so? Even though you said that I'm just a little slice of brain?Is it possible that these memories aren't really mine, but I'm just reading them from your thoughts?[quotation mark][line break]I would say that a little slice of brain wouldn't be capable of proposing such an elaborate hypothesis. It seems to me your whole brain is now at work.[quotation mark]",
+"[quotation mark]But, if I understood you correctly,[quotation mark] says Lucky, [quotation mark]you said that the virus completely wipes zombie brains, leaving nothing.[quotation mark][line break][quotation mark]Yes, that is what I said,[quotation mark] admits the scientist, [quotation mark]but we've never had a case like this one to study. I'd say it's time to revise our understanding about what's going on. It seems that the brain isn't destroyed, but rather than higher thought processes are suppressed. The neural pathways are still intact. In fact, that has to be the case: our very existence is a matter of piggy-backing on those pathways.",
+"[quotation mark]That's great![quotation mark] says Julien. [quotation mark]Then, we can restore all the zombies![quotation mark][line break][quotation mark]My God, Julien, you're right. We haven't lost them,[quotation mark] replies the scientist. [quotation mark]For the first time, there's a chance that we could put the world back on its feet and put an end to this nightmare.[quotation mark][line break][quotation mark]Even the infected dogs?[quotation mark] asks Lucky.[line break][quotation mark]Yes, including dogs and every other species infected by the virus,[quotation mark] replies the scientist.",
+"[quotation mark]So, now what?[quotation mark] asks the mouse.[line break][quotation mark]Julien,[quotation mark] says Isabelle, [quotation mark]we have to talk with the Colonel and convince him that you're cured and that we now have a cure for the virus.[quotation mark][line break][quotation mark]Okay, I'll do my best,[quotation mark] says Julien.[line break][quotation mark]Onward, comrades![quotation mark] cries the mouse."
 }.
 
 Chapter The Void
@@ -989,18 +989,18 @@ The interphone is a buttoned thing in the void. The interphone can be live. The 
 
 Instead of pushing the interphone:[only present at consciousness 4]
 	if the interphone is not live:
-		say "Une petite LED rouge sur l'interphone s'allume indiquant que vous êtes en direct avec la salle de contrôle.";
+		say "A little red LED lights up on the intercom indicated that the connection to the control room is live.";
 		now the interphone is live;
 	otherwise:
-		say "Vous avez déjà activé l'interphone et sa LED reste allumée."
+		say "You have already activated the intercom; the red LED is still on."
 
-The panneau électrique is an openable closed container in the void. The disjoncteurs are in the panneau électrique. The disjoncteurs are plural-named. The disjoncteurs are broken. The indefinite article of disjoncteurs is "des". The printed name of the disjoncteurs is "disjoncteurs[if the disjoncteurs are broken] sautés[end if]".
+The panneau électrique is an openable closed container in the void. The disjoncteurs are in the panneau électrique. The disjoncteurs are plural-named. The disjoncteurs are broken. The indefinite article of disjoncteurs is "some". The printed name of the disjoncteurs is "[if the disjoncteurs are broken]tripped [end if]circuit breakers".
 
 Instead of touching the disjoncteurs:
-	say "Vous remettez les disjoncteurs";
+	say "You reset the circuit breakers";
 	now the disjoncteurs are not broken;
 	if the servomoteur is broken:
-		say ".[paragraph break]Le panneau électrique fait un bruit sec et vous constatez que les disjoncteurs ont de nouveau sautés";
+		say ".[paragraph break]There's a sharp clicking sound from the electrical panel and you notice that the circuit breakers have again tripped";
 		now the disjoncteurs are broken;
 	say "."
 
@@ -1009,16 +1009,16 @@ The unité de synthèse microfluidique is an openable closed container in the vo
 The servomoteur is in the unité de synthèse microfluidique. The servomoteur is broken. The printed name of the servomoteur is "[pnServo]".
 
 To say pnServo:
-	say "servomoteur";
+	say "servo motor";
 	if the servomoteur is not broken:
-		say " que vous avez réparé".
+		say " that you have repaired".
 
 After opening the unité de synthèse microfluidique:
-	say "Vous ouvrez le panneau d'accès et tout de suite reconnaissez le problème : un écaillee de soudure est tombée sur les terminaux d'un servomoteur, créant un court-circuit."
+	say "You open the service panel and immediately recognize the problem: a fleck of solder has fallen across the terminals of a servomotor, shorting it out."
 	
 Instead of touching the servomoteur:
 	now the servomoteur is not broken;
-	say "Vous écartez le morceau de soudure. La machine doit fonctionner norment maintenant."
+	say "You brush aside the bit of solder. The machine should work normally now, when powered up."
 
 Chapter End Game
 
@@ -1031,7 +1031,7 @@ To terminate the game:
 	say "[VictoryText]".
 		
 To say VictoryText:
-	say "[paragraph break][bold type]        *** VOUS AVEZ GAGNÉ ***[roman type][paragraph break]Vous avez sauvé le monde du fléau du virus zombie777.[paragraph break][bold type]>infos[roman type][line break]Ce jeu participe au Concours Francophone de Fictions Interactives (2017). Il a été écrit en Inform 7.[paragraph break][bold type]>remerciements[roman type][paragraph break]Je voudrais remercier :[paragraph break]* Les organisateurs du concours.[paragraph break]* Graham Nelson pour avoir conçu et écrit Inform 7.[paragraph break]* Les auteurs des modules utilisés dans cette oeuvre : Eric Forgeot, Emily Short et Erik Temple.[paragraph break]* Ben Collins-Sussman, qui a peint la couverture à l'aquarelle.[paragraph break]* Les relecteurs et beta-testeurs extraordinaires.[paragraph break][bold type]FIN."
+	say "[paragraph break][bold type]        *** YOU HAVE WON ***[roman type][paragraph break]You have saved the world from the scourge of the zombie777 virus.[paragraph break][bold type]>about[roman type][line break]This game was originally created as part of the 2017 French Interactive Fiction Competition. The English translation of the game was submitted to the 2018 IFcomp. The game was written in Inform 7.[paragraph break][bold type]>credits[roman type][paragraph break]I'd like to thank:[paragraph break]* Organizers of both competitions.[paragraph break]* Graham Nelson for having conceived and written Inform.[paragraph break]* Authors of the extensions used in this work and its previous versions : Eric Forgeot, Emily Short, and Erik Temple.[paragraph break]* Ben Collins-Sussman, who painted the cover.[paragraph break]* Proofers and beta-testers: Eric Forgeot, Denise Jobin Welch, Brian Rushton.[paragraph break][bold type]FIN."
 	
 Chapter Testing
 
