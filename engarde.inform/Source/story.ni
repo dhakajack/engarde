@@ -15,7 +15,7 @@ Include Glulx Input Loops by Erik Temple.
 Use full-length room descriptions.
 Use no scoring.
 
-Release along with cover art, a file of "Description" called "description.txt" and a file of "Solution" called "fds_solution.txt".
+Release along with cover art, a file of "Blurb" called "blurb.txt" and a file of "Walkthrough" called "walkthrough.txt".
 
 Chapter Globals
 
