@@ -15,7 +15,7 @@ Include Glulx Input Loops by Erik Temple.
 Use full-length room descriptions.
 Use no scoring.
 
-Release along with cover art.
+Release along with cover art, a file of "Description" called "description.txt" and a file of "Solution" called "fds_solution.txt".
 
 Chapter Globals
 
@@ -60,15 +60,17 @@ To say exitList:
 	let L be {up, west, north, south, east, down};
 	repeat with way running through L:
 		if the room the way from the location is not nothing:
-			if the way is:
-				-- west:
-					say "[if unicodage is enabled][unicode 8592][otherwise]<[end if] ";
-				-- north:
-					say "[if unicodage is enabled][unicode 8593][otherwise]^[end if] ";
-				-- south:
-					say "[if unicodage is enabled][unicode 8595][otherwise]v[end if] ";
-				-- east:
-					say "[if unicodage is enabled][unicode 8594][otherwise]>[end if] ";
+			let D be the door the way from the location;
+			if D is nothing or D is open or (D is simpleOpenable and the consciousness of the player is greater than 0) or (D is buttoned and the consciousness of the player is greater than one) or (D is locked and the consciousness of the player is greater than two):
+				if the way is:
+					-- west:
+						say "[if unicodage is enabled][unicode 8592][otherwise]<[end if] ";
+					-- north:
+						say "[if unicodage is enabled][unicode 8593][otherwise]^[end if] ";
+					-- south:
+						say "[if unicodage is enabled][unicode 8595][otherwise]v[end if] ";
+					-- east:
+						say "[if unicodage is enabled][unicode 8594][otherwise]>[end if] ".
 
 Chapter Disable Keyboard
 
