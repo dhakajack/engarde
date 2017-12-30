@@ -94,8 +94,6 @@ For printing a locale paragraph about a door (called the item)
 	(this is the don't mention doors in room descriptions rule):
 	set the locale priority of the item to 0;
 	continue the activity.
-	
-[The room description paragraphs about objects rule is not listed in any rulebook.]
 
 Chapter Button Setup
 
@@ -145,8 +143,6 @@ After printing the banner text:
 Chapter Geography
 
 Section Location Generalities
-
-The printed name of a room is usually "Here".
 
 Doors are usually closed. Doors are usually not locked.
 
