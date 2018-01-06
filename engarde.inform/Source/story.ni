@@ -323,7 +323,7 @@ Instead of pushing an elevatorDoor:
 	if the player is in an elevator:
 		if the consciousness of the player is:
 			-- 2:
-				say " with your snout[one of] (which seems shorter than you remember)[or][stopping] and notices a slight vibration. A moment later, the wall opens upon a corridor to the west.";
+				say " with your snout[one of] (which seems shorter than you remember)[or][stopping] and notice a slight vibration. A moment later, the wall opens upon a corridor to the west.";
 			-- otherwise:
 				say ", the elevator [if the location is Ascenseur 2]descends to the first level[otherwise]goes up to the second level[end if] and the doors open to the west."; 
 		if the player is in Ascenseur 2:
@@ -1030,7 +1030,7 @@ To terminate the game:
 	say "[VictoryText]".
 		
 To say VictoryText:
-	say "[paragraph break][bold type]        *** YOU HAVE WON ***[roman type][paragraph break]You have saved the world from the scourge of the zombie777 virus.[paragraph break][bold type]>about[roman type][line break]This game was originally created as part of the 2018 French Interactive Fiction Competition. The English translation of the game was submitted to the 2018 IFcomp. The game was written in Inform 7.[paragraph break][bold type]>credits[roman type][paragraph break]I'd like to thank:[paragraph break]* Organizers of both competitions.[paragraph break]* Graham Nelson for having conceived and written Inform.[paragraph break]* Authors of the extensions used in this work and its previous versions : Eric Forgeot, Emily Short, Erik Temple, and Juhana Leinonen.[paragraph break]* Ben Collins-Sussman, who painted the cover.[paragraph break]* Proofers and beta-testers: Éric Forgeot, Stéphane Flauder, Denise Jobin, Brian Rushton (original version). Lara Welch (English language version).[paragraph break][bold type]FIN."
+	say "[paragraph break][bold type]        *** YOU HAVE WON ***[roman type][paragraph break]You have saved the world from the scourge of the zombie777 virus.[paragraph break][bold type]>about[roman type][line break]This game was originally created as part of the 2018 French Interactive Fiction Competition. The English translation of the game was submitted to the 2018 IFcomp. The game was written in Inform 7.[paragraph break][bold type]>credits[roman type][paragraph break]I'd like to thank:[paragraph break]* Organizers of both competitions.[paragraph break]* Graham Nelson for having conceived and written Inform.[paragraph break]* Authors of the extensions used in this work and its previous versions : Eric Forgeot, Emily Short, Erik Temple, and Juhana Leinonen.[paragraph break]* Ben Collins-Sussman, who painted the cover.[paragraph break]* Proofers and beta-testers: Éric Forgeot, Stéphane Flauder, Denise Jobin, Brian Rushton, Hugo Labrande (original version). Lara Welch, Ben Collins-Sussman (English language version).[paragraph break][bold type]FIN."
 	
 Chapter Testing
 
