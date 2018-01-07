@@ -829,7 +829,7 @@ After eating the slice of brain:
 	increment the consciousness of the player;
 	increment the knownCommands of the player.
 	
-After going north from Escalier 2 when the sasDoor is not locked for the first time:
+After going north from Escalier 2 when the sasDoor is not closed for the first time:
 	now the BlockChatterFlag is true;
 	say "A women in her forties, dressed in a white lab coat sits behind a metal desk. She is half way between you and the door at the other end of the room. Her upper right arm is swathed in gauze, but the bandages are drenched in blood and she appears gravely injured. In her other hand, she brandishes a crowbar with determination.";
 	try looking;
