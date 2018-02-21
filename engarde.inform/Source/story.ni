@@ -773,13 +773,10 @@ The commandList is a list of numbers that varies. The commandList is {}.
 To increment the knownCommands of the player:
 	increase the knownCommands of the player by 1;
 	add the knownCommands of the player to commandList;
-	sort commandList in random order;
-	let R be the number of entries in commandList;
-	repeat with N running from 1 to R:
-		let E be entry N of commandList;
-		now the tint of the button in row N of the Table of Glimmr Buttons is entry E of Palette;
-		now the linked replacement-command of the button in row N of the Table of Glimmr Buttons is entry E of actionList;
-	now the graphlink status of the button in row R of the Table of Glimmr Buttons is g-active;
+	let N be the knownCommands of the player;
+	now the tint of the button in row N of the Table of Glimmr Buttons is entry N of Palette;
+	now the linked replacement-command of the button in row N of the Table of Glimmr Buttons is entry N of actionList;
+	now the graphlink status of the button in row N of the Table of Glimmr Buttons is g-active;
 	follow the refresh windows rule.
 				
 Chapter Milestones
