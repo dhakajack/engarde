@@ -1,5 +1,9 @@
 # engarde
-English translation of Faute de servo
+English translation of Faute de servo. Note that this is the interpreter
+version of the game, which was developed as an intermediate step in 
+converting the game to English. This version of the program was abandoned
+in favor of polishing the web-based version using Vorple extensions. This
+version works, but is now outdated relative to web-engarde.
 
 What is this?
 -------------
